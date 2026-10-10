@@ -215,7 +215,7 @@
         "windows-x86_64": "153440338",
         "macos-aarch64": "153440338"
       },
-      "manifest_digest": "256b043dfee789cd"
+      "manifest_digest": "d77532839bfba30e"
     },
     {
       "id": "json-to-table",
