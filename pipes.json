@@ -32,7 +32,7 @@
     {
       "id": "flux",
       "name": "flux",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Package manager for the flux family. Fetches pipes and the declarations that turn them into dot-verbs.",
       "author": "takakix2",
       "bin_name": "flux",
@@ -49,11 +49,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
-        "macos-aarch64": "153440338"
+        "linux-x86_64": "7dc3c8800",
+        "windows-x86_64": "7dc3c8800",
+        "macos-aarch64": "7dc3c8800"
       },
-      "manifest_digest": "0b709e40c332c184"
+      "manifest_digest": "be1f36f10a5964e5"
     },
     {
       "id": "flux-eye",
@@ -96,16 +96,16 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
-        "macos-aarch64": "153440338"
+        "linux-x86_64": "7dc3c8800",
+        "windows-x86_64": "7dc3c8800",
+        "macos-aarch64": "7dc3c8800"
       },
       "manifest_digest": "99c091428a7beb2f"
     },
     {
       "id": "flux-grep",
       "name": "flux-grep",
-      "version": "3.0.0",
+      "version": "3.0.1",
       "description": "Fast signal extraction from NDJSON streams. Filter and search structured data at speed.",
       "author": "takakix2",
       "bin_name": "flux-grep",
@@ -124,11 +124,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
-        "macos-aarch64": "153440338"
+        "linux-x86_64": "7dc3c8800",
+        "windows-x86_64": "7dc3c8800",
+        "macos-aarch64": "7dc3c8800"
       },
-      "manifest_digest": "21d6f88a51fea6f1"
+      "manifest_digest": "529079a81129f216"
     },
     {
       "id": "flux-priority",
