@@ -133,7 +133,7 @@
     {
       "id": "flux-priority",
       "name": "flux-priority",
-      "description": "Relevance ranker. Scores files by mtime, extension, path depth, size and an interest profile, then emits them in priority order as Flux NDJSON.",
+      "description": "Relevance ranker. Orders files by git activity -- each commit that touched a file adds 0.5 ** (age / 7 days), uncommitted and out-of-git files count their modified time once -- and emits them in priority order as Flux NDJSON.",
       "bin_name": "flux-priority",
       "runtime": "binary",
       "usage": "flux-eye . --detail | flux-priority --since 24h",
@@ -143,11 +143,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
-        "macos-aarch64": "153440338"
+        "linux-x86_64": "670eba3e8",
+        "windows-x86_64": "670eba3e8",
+        "macos-aarch64": "670eba3e8"
       },
-      "manifest_digest": "8f50260efa165c47"
+      "manifest_digest": "b431b4498266af1e"
     },
     {
       "id": "flux-read",
