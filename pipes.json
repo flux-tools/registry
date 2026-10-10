@@ -58,7 +58,7 @@
     {
       "id": "flux-eye",
       "name": "flux-eye",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
       "author": "takakix2",
       "bin_name": "flux-eye",
@@ -77,11 +77,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
-        "macos-aarch64": "153440338"
+        "linux-x86_64": "d6ddf8c04",
+        "windows-x86_64": "d6ddf8c04",
+        "macos-aarch64": "d6ddf8c04"
       },
-      "manifest_digest": "6377650b3d2436e1"
+      "manifest_digest": "9c8c833c97f2ae0e"
     },
     {
       "id": "flux-find",
@@ -143,9 +143,9 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "38b46a915",
-        "windows-x86_64": "38b46a915",
-        "macos-aarch64": "38b46a915"
+        "linux-x86_64": "d6ddf8c04",
+        "windows-x86_64": "d6ddf8c04",
+        "macos-aarch64": "d6ddf8c04"
       },
       "manifest_digest": "b431b4498266af1e"
     },
