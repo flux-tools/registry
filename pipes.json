@@ -23,8 +23,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "6b9345959837a6cb"
@@ -49,8 +49,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "0b709e40c332c184"
@@ -77,8 +77,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "6377650b3d2436e1"
@@ -96,8 +96,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "99c091428a7beb2f"
@@ -124,8 +124,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "21d6f88a51fea6f1"
@@ -143,11 +143,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
-      "manifest_digest": "f2808fbbf77d1413"
+      "manifest_digest": "8f50260efa165c47"
     },
     {
       "id": "flux-read",
@@ -162,8 +162,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "f5b81c4c7c5ac988"
@@ -171,7 +171,7 @@
     {
       "id": "flux-render",
       "name": "flux-render",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "Universal format converter. Renders Flux NDJSON as JSON, Markdown, CSV or YAML (and back) -- the interchange layer with the outside world.",
       "author": "takakix2",
       "bin_name": "flux-render",
@@ -192,11 +192,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
-      "manifest_digest": "b2caa0f36af7a384"
+      "manifest_digest": "624bf3c664181fa1"
     },
     {
       "id": "flux-write",
@@ -211,8 +211,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
       "manifest_digest": "256b043dfee789cd"
@@ -220,7 +220,7 @@
     {
       "id": "json-to-table",
       "name": "json-to-table",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "description": "Renders an NDJSON stream as a formatted ASCII table, collecting columns from the keys it sees. Human-readable end of a pipeline.",
       "author": "takakix2",
       "bin_name": "json-to-table",
@@ -239,11 +239,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "a4b8200f0",
-        "windows-x86_64": "a4b8200f0",
+        "linux-x86_64": "153440338",
+        "windows-x86_64": "153440338",
         "macos-aarch64": "a4b8200f0"
       },
-      "manifest_digest": "e6ddaef93943653c"
+      "manifest_digest": "31ff664b3b10e207"
     }
   ]
 }

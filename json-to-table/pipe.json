@@ -3,7 +3,7 @@
   "id": "json-to-table",
   "name": "json-to-table",
   "bin_name": "json-to-table",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Renders an NDJSON stream as a formatted ASCII table, collecting columns from the keys it sees. Human-readable end of a pipeline.",
   "usage": "flux-eye . | json-to-table",
   "author": "takakix2",

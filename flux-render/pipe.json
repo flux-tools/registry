@@ -3,7 +3,7 @@
   "id": "flux-render",
   "name": "flux-render",
   "bin_name": "flux-render",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Universal format converter. Renders Flux NDJSON as JSON, Markdown, CSV or YAML (and back) -- the interchange layer with the outside world.",
   "usage": "flux-eye /vault | flux-render --to md",
   "author": "takakix2",
