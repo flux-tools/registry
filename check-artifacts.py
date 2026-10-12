@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.12"
+# ///
 """配る前に、**宣言した面の実体が在るか**・**linux 面が静的か**・**版を名乗れるか**を数える。
 
     ./check-artifacts.py            数えて表で出す（違反が在れば非ゼロ）

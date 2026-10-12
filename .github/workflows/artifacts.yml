@@ -21,5 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # 門のスクリプトは `uv run --script` で走る（shebang）—— 要る Python（>=3.12）は uv が用意する。
+      - uses: astral-sh/setup-uv@v6
       - name: 宣言した面の実体が在り、linux 面が静的か
         run: ./check-artifacts.py

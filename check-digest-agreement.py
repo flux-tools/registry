@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.12"
+# ///
 """🚨 **指紋の計算が、配る側と入れる側で一致しているか。**
 
 `manifest_digest` は **2 つの実装に分かれている**（配る側は Python、入れる側は Rust）。
