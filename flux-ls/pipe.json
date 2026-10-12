@@ -15,10 +15,10 @@
     "official"
   ],
   "min_hsh_version": "0.1.0",
-  "notes": "Every record has the same keys on every OS; a value the OS does not have is null (mode, uid, inode on Windows). hidden is a leading dot, or the OS's own mark (the hidden attribute on Windows, chflags hidden on macOS). Symlinks are described, not followed (link_target). --names-only skips the stat per entry (path, name and kind only) for large or remote directories. Names that are not UTF-8 are written with U+FFFD and counted on stderr. The library entry (run_in) takes the directory and writers explicitly and never exits the process, so a shell can run it in-process. The alias fls is also the name of a tool in The Sleuth Kit; where both are installed, the one earlier on PATH wins.",
+  "notes": "Every record has the same keys on every OS; a value the OS does not have is null (mode, uid, inode on Windows). hidden is a leading dot, or the OS's own mark (the hidden attribute on Windows, chflags hidden on macOS). Symlinks are described, not followed (link_target). --names-only skips the stat per entry (path, name and kind only) for large or remote directories. Names that are not UTF-8 are written with U+FFFD and counted on stderr. The library entry (run_in) takes the directory and writers explicitly and never exits the process, so a shell can run it in-process. The short name is fla (flux list all): fls was taken by The Sleuth Kit and by other ls replacements.",
   "verbs": [
     {
-      "verb": "fls",
+      "verb": "fla",
       "template": "flux-ls",
       "args": []
     }

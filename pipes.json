@@ -81,7 +81,7 @@
         "windows-x86_64": "2ab94ec58",
         "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "c1c4ac25f825848a"
+      "manifest_digest": "8eb1fff6cb132545"
     },
     {
       "id": "flux-env",
@@ -240,7 +240,7 @@
         "windows-x86_64": "94bcc7adb",
         "macos-aarch64": "94bcc7adb"
       },
-      "manifest_digest": "e69b3c012fcd6316"
+      "manifest_digest": "f30900ded6b7de8d"
     },
     {
       "id": "flux-priority",

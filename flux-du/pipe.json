@@ -15,10 +15,10 @@
     "official"
   ],
   "min_hsh_version": "0.1.0",
-  "notes": "size is the apparent size (what the files say they hold); disk is the blocks they take, which is what du reports -- sparse and compressed files make them differ. disk is null on Windows. Ignore files and dotfiles hide nothing (target/ and node_modules/ are usually where the space is). Stays on one filesystem unless --cross-filesystems. Hard links count once (not on Windows, where Rust does not give the link count). Symlinks count as themselves and are not followed. A directory that cannot be read is not counted, and it and its parents say partial: true; stderr says how many. --max-depth limits what is shown, not what is counted. --all adds a record per file. --threads N sets the walker threads: more for network mounts, 1 for a spinning disk. The library entry (run_in) never exits the process, so a shell can run it in-process.",
+  "notes": "size is the apparent size (what the files say they hold); disk is the blocks they take, which is what du reports -- sparse and compressed files make them differ. disk is null on Windows. Ignore files and dotfiles hide nothing (target/ and node_modules/ are usually where the space is). Stays on one filesystem unless --cross-filesystems. Hard links count once (not on Windows, where Rust does not give the link count). Symlinks count as themselves and are not followed. A directory that cannot be read is not counted, and it and its parents say partial: true; stderr says how many. --max-depth limits what is shown, not what is counted. --all adds a record per file. --threads N sets the walker threads: more for network mounts, 1 for a spinning disk. The library entry (run_in) never exits the process, so a shell can run it in-process. The short name is fusage: fdu was taken by other du replacements.",
   "verbs": [
     {
-      "verb": "fdu",
+      "verb": "fusage",
       "template": "flux-du",
       "args": []
     }
