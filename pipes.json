@@ -159,6 +159,34 @@
       "manifest_digest": "052c57cd7623b120"
     },
     {
+      "id": "flux-id",
+      "name": "flux-id",
+      "version": "0.1.0",
+      "description": "Who this process runs as, as Flux signals: one identity record (user, uid/gid or SID, primary group, home, shell, privileged), then one record per group. What id, whoami and groups say on Unix and whoami /user /groups says on Windows, in one shape. Linux, macOS and Windows.",
+      "author": "takakix2",
+      "bin_name": "flux-id",
+      "runtime": "binary",
+      "usage": "flux-id | filter-json --type group",
+      "license": "MIT",
+      "tags": [
+        "system",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "e850db720",
+        "windows-x86_64": "e850db720",
+        "macos-aarch64": "e850db720"
+      },
+      "manifest_digest": "49d57e93e2abaf87"
+    },
+    {
       "id": "flux-ls",
       "name": "flux-ls",
       "version": "0.1.0",

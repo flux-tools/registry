@@ -1,0 +1,32 @@
+{
+  "$schema": "https://oh-my-hsh.navii.online/schemas/pipe-v1.json",
+  "id": "flux-id",
+  "name": "flux-id",
+  "bin_name": "flux-id",
+  "version": "0.1.0",
+  "description": "Who this process runs as, as Flux signals: one identity record (user, uid/gid or SID, primary group, home, shell, privileged), then one record per group. What id, whoami and groups say on Unix and whoami /user /groups says on Windows, in one shape. Linux, macOS and Windows.",
+  "usage": "flux-id | filter-json --type group",
+  "author": "takakix2",
+  "license": "MIT",
+  "runtime": "binary",
+  "tags": [
+    "system",
+    "source",
+    "official"
+  ],
+  "min_hsh_version": "0.1.0",
+  "notes": "A value the OS does not have is null: uid/gid/euid/egid/shell on Windows, sid/domain on Unix. privileged is whether the process runs with full privileges now (effective uid 0 on Unix, an elevated token on Windows); being allowed to become admin (sudo, wheel, Administrators) shows in the group records instead. Groups come primary first, then by id. On macOS the groups are the user's full list from the directory (getgrouplist), as macOS's own id does, because getgroups stops at 16. On Windows a group record says enabled: false when it is in the token but not in force (Administrators when not elevated is deny-only); enabled is null on Unix. Takes no user: it shows this process. The library entry (run) never exits the process.",
+  "verbs": [
+    {
+      "verb": "fid",
+      "template": "flux-id",
+      "args": []
+    }
+  ],
+  "category": "source",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64",
+    "macos-aarch64"
+  ]
+}
