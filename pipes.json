@@ -4,8 +4,8 @@
     {
       "id": "filter-json",
       "name": "filter-json",
-      "version": "0.2.0",
-      "description": "Selects Flux records by naming a field to look in, and projects the fields you want (the required envelope always stays). Not a grep stand-in: whole-record search was removed in 2026-09 because it duplicated `grep -i` and rewrote the bytes.",
+      "version": "0.3.0",
+      "description": "Selects Flux records by type (`--type` / `--not-type`, exact match) or by naming a field to look in, and projects the fields you want (the required envelope always stays). Not a grep stand-in: whole-record search was removed in 2026-09 because it duplicated `grep -i` and rewrote the bytes.",
       "author": "takakix2",
       "bin_name": "filter-json",
       "runtime": "binary",
@@ -23,11 +23,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
+        "linux-x86_64": "ab8caee68",
+        "windows-x86_64": "ab8caee68",
         "macos-aarch64": "153440338"
       },
-      "manifest_digest": "6b9345959837a6cb"
+      "manifest_digest": "8fe317b38d7d8f8d"
     },
     {
       "id": "flux",
