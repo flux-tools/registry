@@ -341,12 +341,12 @@
     {
       "id": "flux-wc",
       "name": "flux-wc",
-      "version": "0.1.0",
-      "description": "Lines, words, bytes and characters, as Flux signals: one record per file (lines, words, bytes, chars, max_line, utf8), in input order. Counts the files named, the files Flux records on stdin point to (flux-ls | flux-wc), or the text on stdin itself. Files are read in parallel. Linux, macOS and Windows.",
+      "version": "0.2.0",
+      "description": "Lines, words, bytes and characters, as Flux signals: one record per file (lines, words, bytes, chars, max_line, utf8), in input order. Counts the files named, the files Flux records on stdin point to (flux-ls | flux-wc), or the text on stdin itself. Files are read in parallel. -l / -w / -c / -m / -L (as wc has them) ask for some counts only, and lines or bytes alone are counted without decoding the text -- as fast as GNU wc -l. Linux, macOS and Windows.",
       "author": "takakix2",
       "bin_name": "flux-wc",
       "runtime": "binary",
-      "usage": "flux-ls | flux-wc",
+      "usage": "flux-ls | flux-wc -l",
       "license": "MIT",
       "tags": [
         "text",
@@ -361,11 +361,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "e1eeb38c4",
-        "windows-x86_64": "e1eeb38c4",
-        "macos-aarch64": "e1eeb38c4"
+        "linux-x86_64": "97a335f06",
+        "windows-x86_64": "97a335f06",
+        "macos-aarch64": "97a335f06"
       },
-      "manifest_digest": "6445e385f93e2897"
+      "manifest_digest": "41b02d0d01675711"
     },
     {
       "id": "flux-write",
