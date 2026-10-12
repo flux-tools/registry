@@ -105,7 +105,7 @@
     {
       "id": "flux-grep",
       "name": "flux-grep",
-      "version": "3.0.1",
+      "version": "3.0.2",
       "description": "Fast signal extraction from NDJSON streams. Filter and search structured data at speed.",
       "author": "takakix2",
       "bin_name": "flux-grep",
@@ -124,11 +124,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "7dc3c8800",
-        "windows-x86_64": "7dc3c8800",
+        "linux-x86_64": "dbc2f8339",
+        "windows-x86_64": "dbc2f8339",
         "macos-aarch64": "7dc3c8800"
       },
-      "manifest_digest": "529079a81129f216"
+      "manifest_digest": "060b52446dccaecb"
     },
     {
       "id": "flux-priority",
