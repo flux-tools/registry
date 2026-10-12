@@ -15,15 +15,15 @@
     "official"
   ],
   "min_hsh_version": "0.1.0",
-  "notes": "Secrets are guessed from the name only (TOKEN, SECRET, PASSWORD, PASSWD, CREDENTIAL, APIKEY, PRIVATEKEY anywhere; KEY, PASS, PAT, COOKIE as a word between underscores): a secret under an innocent name is shown. A redacted variable has value and list null. list keeps empty entries (in PATH an empty entry means the current directory); on Windows quoted entries stay whole. origin is Windows only: user, system or user+system when the name is also kept in the registry (HKCU Environment / the machine's Session Manager Environment), process when neither key keeps it (Windows made it at logon like APPDATA and COMPUTERNAME, the parent passed it like ssh's HOME, or a shell set it); null elsewhere. Names starting with = (per-drive current directories on Windows) say hidden: true. Names match case-insensitively on Windows. This is not set: shell variables that were not exported never reach a child process. The library entry (run_with) takes the variables and the OS rules explicitly and never exits the process.",
+  "notes": "Secrets are guessed from the name only (TOKEN, SECRET, PASSWORD, PASSWD, CREDENTIAL, APIKEY, PRIVATEKEY anywhere; KEY, PASS, PAT, COOKIE as a word between underscores): a secret under an innocent name is shown. A redacted variable has value and list null. list keeps empty entries (in PATH an empty entry means the current directory); on Windows quoted entries stay whole. origin is Windows only: user, system or user+system when the name is also kept in the registry (HKCU Environment / the machine's Session Manager Environment), process when neither key keeps it (Windows made it at logon like APPDATA and COMPUTERNAME, the parent passed it like ssh's HOME, or a shell set it); null elsewhere. Names starting with = (per-drive current directories on Windows) say hidden: true. Names match case-insensitively on Windows. This is not set: shell variables that were not exported never reach a child process. The library entry (run_with) takes the variables and the OS rules explicitly and never exits the process. The short name is fenvs: fenv is another env tool (crates.io).",
   "verbs": [
     {
-      "verb": "fenv",
+      "verb": "fenvs",
       "template": "flux-env",
       "args": []
     },
     {
-      "verb": "fenv",
+      "verb": "fenvs",
       "template": "flux-env {name}",
       "args": [
         {

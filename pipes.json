@@ -109,7 +109,7 @@
         "windows-x86_64": "1b276ec02",
         "macos-aarch64": "1b276ec02"
       },
-      "manifest_digest": "22d81092498f722d"
+      "manifest_digest": "776f1b9e9c6f86f9"
     },
     {
       "id": "flux-eye",
@@ -212,7 +212,7 @@
         "windows-x86_64": "e850db720",
         "macos-aarch64": "e850db720"
       },
-      "manifest_digest": "49d57e93e2abaf87"
+      "manifest_digest": "f83ea0d3f2ca7539"
     },
     {
       "id": "flux-ls",
