@@ -84,6 +84,34 @@
       "manifest_digest": "c1c4ac25f825848a"
     },
     {
+      "id": "flux-env",
+      "name": "flux-env",
+      "version": "0.1.0",
+      "description": "The environment this process got, as Flux signals: one record per variable (name, value, list, origin, redacted, hidden), by name. List-like variables (PATH, PYTHONPATH, XDG_DATA_DIRS, ...) come split on the OS's separator. Values of variables whose names say they are secrets are hidden unless --reveal. With names, only those (exit 1 when none is set). Linux, macOS and Windows.",
+      "author": "takakix2",
+      "bin_name": "flux-env",
+      "runtime": "binary",
+      "usage": "flux-env PATH",
+      "license": "MIT",
+      "tags": [
+        "system",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1b276ec02",
+        "windows-x86_64": "1b276ec02",
+        "macos-aarch64": "1b276ec02"
+      },
+      "manifest_digest": "22d81092498f722d"
+    },
+    {
       "id": "flux-eye",
       "name": "flux-eye",
       "version": "0.1.2",
