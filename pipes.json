@@ -58,7 +58,7 @@
     {
       "id": "flux-du",
       "name": "flux-du",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Where the space under the current directory goes, as Flux signals: one record per directory with the totals under it (size, disk blocks, files, dirs), sorted by path. The tree is walked in parallel. Sorting by size, the top few or one depth are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.",
       "author": "takakix2",
       "bin_name": "flux-du",
@@ -77,16 +77,16 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "4e733a875",
-        "windows-x86_64": "4e733a875",
-        "macos-aarch64": "4e733a875"
+        "linux-x86_64": "2ab94ec58",
+        "windows-x86_64": "2ab94ec58",
+        "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "f6867c8dca8d7b01"
+      "manifest_digest": "c1c4ac25f825848a"
     },
     {
       "id": "flux-eye",
       "name": "flux-eye",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
       "author": "takakix2",
       "bin_name": "flux-eye",
@@ -105,11 +105,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "d6ddf8c04",
-        "windows-x86_64": "d6ddf8c04",
-        "macos-aarch64": "d6ddf8c04"
+        "linux-x86_64": "2ab94ec58",
+        "windows-x86_64": "2ab94ec58",
+        "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "9c8c833c97f2ae0e"
+      "manifest_digest": "48c049601cb1a457"
     },
     {
       "id": "flux-find",
@@ -133,7 +133,7 @@
     {
       "id": "flux-grep",
       "name": "flux-grep",
-      "version": "3.0.2",
+      "version": "3.0.3",
       "description": "Fast signal extraction from NDJSON streams. Filter and search structured data at speed.",
       "author": "takakix2",
       "bin_name": "flux-grep",
@@ -152,11 +152,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "dbc2f8339",
-        "windows-x86_64": "dbc2f8339",
-        "macos-aarch64": "dbc2f8339"
+        "linux-x86_64": "2ab94ec58",
+        "windows-x86_64": "2ab94ec58",
+        "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "060b52446dccaecb"
+      "manifest_digest": "052c57cd7623b120"
     },
     {
       "id": "flux-ls",

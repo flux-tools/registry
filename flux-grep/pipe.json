@@ -3,7 +3,7 @@
   "id": "flux-grep",
   "name": "flux-grep",
   "bin_name": "flux-grep",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Fast signal extraction from NDJSON streams. Filter and search structured data at speed.",
   "usage": "flux-grep TODO ~/project",
   "author": "takakix2",
