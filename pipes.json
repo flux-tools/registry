@@ -126,7 +126,7 @@
       "build_ids": {
         "linux-x86_64": "dbc2f8339",
         "windows-x86_64": "dbc2f8339",
-        "macos-aarch64": "7dc3c8800"
+        "macos-aarch64": "dbc2f8339"
       },
       "manifest_digest": "060b52446dccaecb"
     },
