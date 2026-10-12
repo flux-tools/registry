@@ -84,7 +84,7 @@ from flux_artifacts import artifact_path, build_id_of, pipe_dirs
 # 🚨 **これが無いと、緑のときに限って赤になる。** 📏 実測（2026-09-05）:
 #   `PYTHONIOENCODING=cp932` で撃つと rc=0 → **rc=1** に反転する。落ちる場所は
 #   数え終えたあとの `print("✅ …")` ＝ **測り切ってから、そう言おうとして死ぬ**。
-#   ⭐ CI は ubuntu なので出ない。**手で撃つ台**（dyna の cp932 コンソール）で出る。
+#   ⭐ CI は ubuntu なので出ない。**手で撃つマシン**（Windows の cp932 コンソール）で出る。
 #
 # ⚠️ `sys.stderr` は既定が `backslashreplace` なので**落ちない** —— 死ぬのは
 #    `strict` の `stdout` だけ。∴ 要るのは「stdout に非 ASCII を刷る物」だけで、
