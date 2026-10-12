@@ -56,6 +56,34 @@
       "manifest_digest": "be1f36f10a5964e5"
     },
     {
+      "id": "flux-du",
+      "name": "flux-du",
+      "version": "0.1.0",
+      "description": "Where the space under the current directory goes, as Flux signals: one record per directory with the totals under it (size, disk blocks, files, dirs), sorted by path. The tree is walked in parallel. Sorting by size, the top few or one depth are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.",
+      "author": "takakix2",
+      "bin_name": "flux-du",
+      "runtime": "binary",
+      "usage": "flux-du --max-depth 1",
+      "license": "MIT",
+      "tags": [
+        "filesystem",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "4e733a875",
+        "windows-x86_64": "4e733a875",
+        "macos-aarch64": "4e733a875"
+      },
+      "manifest_digest": "f6867c8dca8d7b01"
+    },
+    {
       "id": "flux-eye",
       "name": "flux-eye",
       "version": "0.1.1",
