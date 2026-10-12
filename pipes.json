@@ -150,6 +150,34 @@
       "manifest_digest": "b431b4498266af1e"
     },
     {
+      "id": "flux-proc",
+      "name": "flux-proc",
+      "version": "0.1.0",
+      "description": "What the system is doing right now, as Flux signals: host, load, memory, CPU, disks, network interfaces and processes, one snapshot per run, each kind as its own `type` (keep what you want with `filter-json --type`). Linux, macOS and Windows.",
+      "author": "takakix2",
+      "bin_name": "flux-proc",
+      "runtime": "binary",
+      "usage": "flux-proc process disk",
+      "license": "MIT",
+      "tags": [
+        "system",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "afb8f4d4f",
+        "windows-x86_64": "afb8f4d4f",
+        "macos-aarch64": "afb8f4d4f"
+      },
+      "manifest_digest": "c4d025e498c7880a"
+    },
+    {
       "id": "flux-read",
       "name": "flux-read",
       "description": "Token-budgeted file reader. Streams file contents as Flux NDJSON.",

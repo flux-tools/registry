@@ -100,7 +100,7 @@ def build_id_of(path: pathlib.Path) -> tuple[str | None, str]:
     # 🚨 逆に**別の値が 2 つ**在ったら、どちらを配ったかは実体からは決められない。
     found = sorted({m.decode("ascii") for m in _STAMP.findall(b)})
     if not found:
-        return None, "版を名乗る文字列が埋まっていない（Rust 製でない?）"
+        return None, "版を名乗る文字列が埋まっていない（cargo の build.rs か Go の build.sh を通していない?）"
     if len(found) > 1:
         return None, f"版が {len(found)} 通り埋まっている（決められない）: {', '.join(found)}"
 
