@@ -131,6 +131,34 @@
       "manifest_digest": "060b52446dccaecb"
     },
     {
+      "id": "flux-ls",
+      "name": "flux-ls",
+      "version": "0.1.0",
+      "description": "What is in the current directory, as Flux signals: one record per entry (path, name, kind, size, mtime, hidden, link target, mode, owner, ...), sorted by name. Nothing is hidden or reordered here -- dotfiles come out with hidden: true, and sorting, filtering and tables are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.",
+      "author": "takakix2",
+      "bin_name": "flux-ls",
+      "runtime": "binary",
+      "usage": "flux-ls | filter-json --type entry",
+      "license": "MIT",
+      "tags": [
+        "filesystem",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "94bcc7adb",
+        "windows-x86_64": "94bcc7adb",
+        "macos-aarch64": "94bcc7adb"
+      },
+      "manifest_digest": "e69b3c012fcd6316"
+    },
+    {
       "id": "flux-priority",
       "name": "flux-priority",
       "description": "Relevance ranker. Orders files by git activity -- each commit that touched a file adds 0.5 ** (age / 7 days), uncommitted and out-of-git files count their modified time once -- and emits them in priority order as Flux NDJSON.",
