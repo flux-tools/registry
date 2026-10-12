@@ -283,6 +283,35 @@
       "manifest_digest": "624bf3c664181fa1"
     },
     {
+      "id": "flux-wc",
+      "name": "flux-wc",
+      "version": "0.1.0",
+      "description": "Lines, words, bytes and characters, as Flux signals: one record per file (lines, words, bytes, chars, max_line, utf8), in input order. Counts the files named, the files Flux records on stdin point to (flux-ls | flux-wc), or the text on stdin itself. Files are read in parallel. Linux, macOS and Windows.",
+      "author": "takakix2",
+      "bin_name": "flux-wc",
+      "runtime": "binary",
+      "usage": "flux-ls | flux-wc",
+      "license": "MIT",
+      "tags": [
+        "text",
+        "source",
+        "filter",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "e1eeb38c4",
+        "windows-x86_64": "e1eeb38c4",
+        "macos-aarch64": "e1eeb38c4"
+      },
+      "manifest_digest": "6445e385f93e2897"
+    },
+    {
       "id": "flux-write",
       "name": "flux-write",
       "description": "File writer for the Flux series. Overwrite, append, replace a line range, move or mkdir from one command.",
