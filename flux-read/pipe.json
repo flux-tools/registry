@@ -3,7 +3,7 @@
   "id": "flux-read",
   "name": "flux-read",
   "bin_name": "flux-read",
-  "description": "Token-budgeted file reader. Streams file contents as Flux NDJSON.",
+  "description": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
   "runtime": "binary",
   "verbs": [
     {
@@ -45,8 +45,11 @@
       ]
     }
   ],
-  "category": "source",
-  "usage": "flux-read /path/to/file --budget 2000",
+  "category": [
+    "source",
+    "filter"
+  ],
+  "usage": "flux-read /path/to/file --budget 2000   |   flux-eye . --detail | flux-read",
   "platforms": [
     "linux-x86_64",
     "windows-x86_64",

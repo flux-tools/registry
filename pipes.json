@@ -292,21 +292,21 @@
     {
       "id": "flux-read",
       "name": "flux-read",
-      "description": "Token-budgeted file reader. Streams file contents as Flux NDJSON.",
+      "description": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
       "bin_name": "flux-read",
       "runtime": "binary",
-      "usage": "flux-read /path/to/file --budget 2000",
+      "usage": "flux-read /path/to/file --budget 2000   |   flux-eye . --detail | flux-read",
       "platforms": [
         "linux-x86_64",
         "windows-x86_64",
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "484039360",
-        "windows-x86_64": "484039360",
-        "macos-aarch64": "484039360"
+        "linux-x86_64": "16479295a",
+        "windows-x86_64": "16479295a",
+        "macos-aarch64": "16479295a"
       },
-      "manifest_digest": "f5b81c4c7c5ac988"
+      "manifest_digest": "df7b42642cc48e43"
     },
     {
       "id": "flux-render",
