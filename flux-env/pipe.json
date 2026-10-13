@@ -3,7 +3,7 @@
   "id": "flux-env",
   "name": "flux-env",
   "bin_name": "flux-env",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The environment this process got, as Flux signals: one record per variable (name, value, list, origin, redacted, hidden), by name. List-like variables (PATH, PYTHONPATH, XDG_DATA_DIRS, ...) come split on the OS's separator. Values of variables whose names say they are secrets are hidden unless --reveal. With names, only those (exit 1 when none is set). Linux, macOS and Windows.",
   "usage": "flux-env PATH",
   "author": "takakix2",

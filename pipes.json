@@ -86,7 +86,7 @@
     {
       "id": "flux-env",
       "name": "flux-env",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "The environment this process got, as Flux signals: one record per variable (name, value, list, origin, redacted, hidden), by name. List-like variables (PATH, PYTHONPATH, XDG_DATA_DIRS, ...) come split on the OS's separator. Values of variables whose names say they are secrets are hidden unless --reveal. With names, only those (exit 1 when none is set). Linux, macOS and Windows.",
       "author": "takakix2",
       "bin_name": "flux-env",
@@ -105,16 +105,16 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "1b276ec02",
-        "windows-x86_64": "1b276ec02",
+        "linux-x86_64": "ee45a76e4",
+        "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "1b276ec02"
       },
-      "manifest_digest": "776f1b9e9c6f86f9"
+      "manifest_digest": "2d4a6a45e0d9d02a"
     },
     {
       "id": "flux-eye",
       "name": "flux-eye",
-      "version": "0.1.2",
+      "version": "0.2.0",
       "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
       "author": "takakix2",
       "bin_name": "flux-eye",
@@ -133,11 +133,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "2ab94ec58",
-        "windows-x86_64": "2ab94ec58",
+        "linux-x86_64": "ee45a76e4",
+        "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "48c049601cb1a457"
+      "manifest_digest": "fee42451c3f6e8a0"
     },
     {
       "id": "flux-find",
@@ -152,8 +152,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "ba6b96aa5",
-        "windows-x86_64": "ba6b96aa5",
+        "linux-x86_64": "ee45a76e4",
+        "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "7dc3c8800"
       },
       "manifest_digest": "99c091428a7beb2f"
@@ -161,7 +161,7 @@
     {
       "id": "flux-grep",
       "name": "flux-grep",
-      "version": "3.0.5",
+      "version": "3.1.0",
       "description": "Fast signal extraction from NDJSON streams. Filter and search structured data at speed.",
       "author": "takakix2",
       "bin_name": "flux-grep",
@@ -180,11 +180,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "ba6b96aa5",
-        "windows-x86_64": "ba6b96aa5",
+        "linux-x86_64": "ee45a76e4",
+        "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "aec92dff8058b1e2"
+      "manifest_digest": "f646d60019d91142"
     },
     {
       "id": "flux-id",
@@ -302,8 +302,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "74c9a8d83",
-        "windows-x86_64": "74c9a8d83",
+        "linux-x86_64": "ee45a76e4",
+        "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "74c9a8d83"
       },
       "manifest_digest": "f5b81c4c7c5ac988"
@@ -380,8 +380,8 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
+        "linux-x86_64": "ee45a76e4",
+        "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "153440338"
       },
       "manifest_digest": "d77532839bfba30e"

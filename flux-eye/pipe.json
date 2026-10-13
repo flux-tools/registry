@@ -3,7 +3,7 @@
   "id": "flux-eye",
   "name": "flux-eye",
   "bin_name": "flux-eye",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
   "usage": "flux-eye ~/project --detail",
   "author": "takakix2",
