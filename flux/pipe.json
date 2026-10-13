@@ -3,7 +3,7 @@
   "id": "flux",
   "name": "flux",
   "bin_name": "flux",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Package manager for the flux family. Fetches pipes and the declarations that turn them into dot-verbs.",
   "usage": "flux install flux-eye",
   "author": "takakix2",

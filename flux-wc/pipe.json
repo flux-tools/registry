@@ -3,7 +3,7 @@
   "id": "flux-wc",
   "name": "flux-wc",
   "bin_name": "flux-wc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lines, words, bytes and characters, as Flux signals: one record per file (lines, words, bytes, chars, max_line, utf8), in input order. Counts the files named, the files Flux records on stdin point to (flux-ls | flux-wc), or the text on stdin itself. Files are read in parallel. -l / -w / -c / -m / -L (as wc has them) ask for some counts only, and lines or bytes alone are counted without decoding the text -- as fast as GNU wc -l. Linux, macOS and Windows.",
   "usage": "flux-ls | flux-wc -l",
   "author": "takakix2",

@@ -3,7 +3,7 @@
   "id": "filter-json",
   "name": "filter-json",
   "bin_name": "filter-json",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Selects Flux records by type (`--type` / `--not-type`, exact match) or by naming a field to look in, and projects the fields you want (the required envelope always stays). Not a grep stand-in: whole-record search was removed in 2026-09 because it duplicated `grep -i` and rewrote the bytes.",
   "usage": "flux-eye . --detail | filter-json --field path --keyword src",
   "author": "takakix2",
