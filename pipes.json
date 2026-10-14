@@ -65,13 +65,15 @@
       "usage": "flux-grep TODO src --limit 0 | flux-count --by path",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "fb866feae",
-        "windows-x86_64": "fb866feae"
+        "windows-x86_64": "fb866feae",
+        "macos-aarch64": "fb866feae"
       },
-      "manifest_digest": "27ca964a4f2af9d1"
+      "manifest_digest": "49751cb2ec0b7d18"
     },
     {
       "id": "flux-du",
@@ -389,13 +391,15 @@
       "usage": "flux-du | flux-sort --by disk --desc",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "fb866feae",
-        "windows-x86_64": "fb866feae"
+        "windows-x86_64": "fb866feae",
+        "macos-aarch64": "fb866feae"
       },
-      "manifest_digest": "068a54fa54fd023d"
+      "manifest_digest": "bba84b9a8e262a1c"
     },
     {
       "id": "flux-sum",
@@ -407,13 +411,15 @@
       "usage": "git ls-files | sig | flux-sum",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "8a7ac7014",
-        "windows-x86_64": "8a7ac7014"
+        "windows-x86_64": "8a7ac7014",
+        "macos-aarch64": "8a7ac7014"
       },
-      "manifest_digest": "e1ed17ce0a0eaf4d"
+      "manifest_digest": "b229094193eeafcc"
     },
     {
       "id": "flux-tail",

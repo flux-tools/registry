@@ -24,6 +24,7 @@
   "notes": "Sorts Flux records by the value of one field -- sort -n for records. Numbers as numbers, strings as strings; records without the field go last and are counted on stderr. Passes the records through unchanged.\n\nPrototype for #58 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. Accumulates its input like sort. With hsh's HSH_FLUX=sig (exit not unwrapped), this is what makes `du | sort -n` composable while the records stay records.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }
