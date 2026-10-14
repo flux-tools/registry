@@ -1,0 +1,18 @@
+{
+  "$schema": "https://oh-my-hsh.navii.online/schemas/pipe-v1.json",
+  "id": "flux-tail",
+  "name": "flux-tail",
+  "bin_name": "flux-tail",
+  "version": "1.0.0",
+  "description": "The last N Flux records -- tail for records, terminator not counted.",
+  "usage": "journal --since 1h | flux-tail -n 20",
+  "runtime": "binary",
+  "category": "filter",
+  "side_effects": [],
+  "verbs": [],
+  "notes": "The last N Flux records -- tail for records. Unlike plain tail it does not count the terminator as a record; it reads to the end, and ends with tail-stats:complete (count, records) when upstream said it finished.\n\nPrototype for #62 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. No short name yet: fhead is taken on npm (another use) and ftail on npm is a log tailer -- the same kind of tool, the #57 shape. Still undecided after the promotion.",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64"
+  ]
+}

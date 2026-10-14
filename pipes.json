@@ -188,6 +188,24 @@
       "manifest_digest": "503d5cf94ea075c3"
     },
     {
+      "id": "flux-head",
+      "name": "flux-head",
+      "version": "1.0.0",
+      "description": "The first N Flux records -- head for records, keeping the terminator rule.",
+      "bin_name": "flux-head",
+      "runtime": "binary",
+      "usage": "flux-du | flux-sort --by disk --desc | flux-head -n 5",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "8f9f95e11",
+        "windows-x86_64": "8f9f95e11"
+      },
+      "manifest_digest": "bfc935a380a402db"
+    },
+    {
       "id": "flux-id",
       "name": "flux-id",
       "version": "0.1.0",
@@ -340,6 +358,24 @@
         "macos-aarch64": "ee45a76e4"
       },
       "manifest_digest": "73ebe869fa0e15f0"
+    },
+    {
+      "id": "flux-tail",
+      "name": "flux-tail",
+      "version": "1.0.0",
+      "description": "The last N Flux records -- tail for records, terminator not counted.",
+      "bin_name": "flux-tail",
+      "runtime": "binary",
+      "usage": "journal --since 1h | flux-tail -n 20",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "8f9f95e11",
+        "windows-x86_64": "8f9f95e11"
+      },
+      "manifest_digest": "58f10003f6638641"
     },
     {
       "id": "flux-wc",
