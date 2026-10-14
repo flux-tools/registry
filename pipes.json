@@ -51,7 +51,7 @@
       "build_ids": {
         "linux-x86_64": "247ac41e8",
         "windows-x86_64": "247ac41e8",
-        "macos-aarch64": "bf0939ff1"
+        "macos-aarch64": "247ac41e8"
       },
       "manifest_digest": "c31e3e46b77d4016"
     },
@@ -307,7 +307,7 @@
       "build_ids": {
         "linux-x86_64": "247ac41e8",
         "windows-x86_64": "247ac41e8",
-        "macos-aarch64": "16479295a"
+        "macos-aarch64": "247ac41e8"
       },
       "manifest_digest": "27894ff6fc34f106"
     },
