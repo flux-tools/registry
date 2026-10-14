@@ -197,13 +197,15 @@
       "usage": "flux-du | flux-sort --by disk --desc | flux-head -n 5",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "8f9f95e11",
-        "windows-x86_64": "8f9f95e11"
+        "windows-x86_64": "8f9f95e11",
+        "macos-aarch64": "8f9f95e11"
       },
-      "manifest_digest": "bfc935a380a402db"
+      "manifest_digest": "11b7b2744f80b08a"
     },
     {
       "id": "flux-id",
@@ -369,13 +371,15 @@
       "usage": "journal --since 1h | flux-tail -n 20",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "8f9f95e11",
-        "windows-x86_64": "8f9f95e11"
+        "windows-x86_64": "8f9f95e11",
+        "macos-aarch64": "8f9f95e11"
       },
-      "manifest_digest": "58f10003f6638641"
+      "manifest_digest": "59e3d8f9e6891928"
     },
     {
       "id": "flux-wc",
