@@ -53,7 +53,7 @@
         "windows-x86_64": "fd4e8d74d",
         "macos-aarch64": "fd4e8d74d"
       },
-      "manifest_digest": "b077b22f2e171978"
+      "manifest_digest": "73b8d333c16cc959"
     },
     {
       "id": "flux-du",
@@ -442,7 +442,7 @@
         "windows-x86_64": "fd4e8d74d",
         "macos-aarch64": "fd4e8d74d"
       },
-      "manifest_digest": "89d0464d95cec847"
+      "manifest_digest": "08adf38e0a5f73ae"
     }
   ]
 }

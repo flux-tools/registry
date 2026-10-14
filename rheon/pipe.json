@@ -9,6 +9,10 @@
   "author": "takakix2",
   "license": "MIT",
   "runtime": "binary",
+  "side_effects": [
+    "fs:home",
+    "net"
+  ],
   "platforms": [
     "linux-x86_64",
     "windows-x86_64",
