@@ -3,7 +3,7 @@
   "id": "rheon",
   "name": "rheon",
   "bin_name": "rheon",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Package manager for the flux family.",
   "usage": "flux install flux-eye",
   "author": "takakix2",

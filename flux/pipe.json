@@ -3,7 +3,7 @@
   "id": "flux",
   "name": "flux",
   "bin_name": "flux",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Renamed to rheon: run `flux install rheon`.",
   "usage": "flux install flux-eye",
   "author": "takakix2",

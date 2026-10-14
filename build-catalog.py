@@ -38,7 +38,9 @@ OUT = ROOT / "pipes.json"
 # 🚨 これを落とすと「その pipe は無い」と「あなたの台の分は焼いていない」が**同じ 404** に
 #    化ける —— 前者を見た人は存在しない物を探しに行く。**別の事実は別に言う。**
 PASSTHROUGH = ["name", "version", "description", "author", "author_url", "bin_name",
-               "runtime", "usage", "license", "tags", "min_hsh_version", "platforms"]
+               "runtime", "usage", "license", "tags", "min_hsh_version", "platforms",
+               # ⭐ 改名の引き継ぎ —— `rheon update` が旧名から後継へ乗り換えるのに読む
+               "replaces"]
 
 
 def build_ids_of(pipe_dir: pathlib.Path, meta: dict) -> dict[str, str]:
