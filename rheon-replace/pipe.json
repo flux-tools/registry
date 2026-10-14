@@ -34,6 +34,7 @@
   "notes": "Looks for --old in the files named, or in the files Rheon records on stdin point to (rheon-grep PAT . | rheon-replace ...), counts every match in every file first, and writes nothing unless the total is what --expect says (1 by default; --all: at least one). Without --apply it writes nothing at all and says what it would do. One file that cannot be read stops the run before anything is written.\n\nLiteral unless --regex (then $1 / ${name} in --new are groups). --old-file / --new-file take the text from a file (- for stdin) for several lines. Line endings are left alone. A file that is not UTF-8 is not touched (replace:skipped) and its matches are not counted. Writes go through a temporary file and a rename, keep the permissions, and write through a symbolic link. From records, --apply needs the upstream terminator: a cut stream would change some files and not the rest.\n\nOne record per match (replace:planned, or replace:applied once written: path, line, column, before, after), then replace-stats. A refused run ends with replace:refused (reason no-match or count, expected, found), exit 1 and no terminator. --diff prints the changes for people on stderr. Exit 0 / 1 refused or could not read or write / 2 usage / 141.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }

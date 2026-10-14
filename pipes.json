@@ -494,13 +494,15 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "f2617f513",
-        "windows-x86_64": "f2617f513"
+        "windows-x86_64": "f2617f513",
+        "macos-aarch64": "f2617f513"
       },
-      "manifest_digest": "883c5e30ec968579"
+      "manifest_digest": "d87c46f029151d90"
     },
     {
       "id": "rheon-sort",
