@@ -477,7 +477,7 @@
     {
       "id": "rheon-replace",
       "name": "rheon-replace",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "description": "Replaces text only if it occurs exactly as often as expected -- no silent sed.",
       "author": "takakix2",
       "bin_name": "rheon-replace",
@@ -498,11 +498,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "c58fb2710",
-        "windows-x86_64": "c58fb2710",
+        "linux-x86_64": "c1a06e33c",
+        "windows-x86_64": "c1a06e33c",
         "macos-aarch64": "c58fb2710"
       },
-      "manifest_digest": "4326a4494a890f95"
+      "manifest_digest": "a3bf1d6f11295c42"
     },
     {
       "id": "rheon-sort",
