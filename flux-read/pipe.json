@@ -7,6 +7,7 @@
   "description": "Token-budgeted reader for a path or the files upstream records name.",
   "notes": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
   "runtime": "binary",
+  "side_effects": [],
   "verbs": [
     {
       "verb": "fread",

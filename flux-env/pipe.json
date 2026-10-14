@@ -19,6 +19,7 @@
   ],
   "min_hsh_version": "0.1.0",
   "category": "source",
+  "side_effects": [],
   "platforms": [
     "linux-x86_64",
     "windows-x86_64",

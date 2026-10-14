@@ -27,7 +27,7 @@
         "windows-x86_64": "ba6b96aa5",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "67e29359cfbe6b7e"
+      "manifest_digest": "78912be4abde5d7c"
     },
     {
       "id": "flux",
@@ -81,7 +81,7 @@
         "windows-x86_64": "2ab94ec58",
         "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "299077cdf8f79425"
+      "manifest_digest": "ad03f1ec86d5c09b"
     },
     {
       "id": "flux-env",
@@ -109,7 +109,7 @@
         "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "a6cb343e2b296f4e"
+      "manifest_digest": "bd6365f76410af48"
     },
     {
       "id": "flux-eye",
@@ -137,7 +137,7 @@
         "windows-x86_64": "484039360",
         "macos-aarch64": "484039360"
       },
-      "manifest_digest": "3656d6d34671856b"
+      "manifest_digest": "cf618f29f2acd239"
     },
     {
       "id": "flux-find",
@@ -157,7 +157,7 @@
         "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "3c6a7652da42c37b"
+      "manifest_digest": "8615eefde2bdcc69"
     },
     {
       "id": "flux-grep",
@@ -185,7 +185,7 @@
         "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "e9b84a88e"
       },
-      "manifest_digest": "69953a631769041d"
+      "manifest_digest": "503d5cf94ea075c3"
     },
     {
       "id": "flux-id",
@@ -213,7 +213,7 @@
         "windows-x86_64": "e850db720",
         "macos-aarch64": "e850db720"
       },
-      "manifest_digest": "a71029be6ce4933a"
+      "manifest_digest": "20ff7e50ed8af490"
     },
     {
       "id": "flux-ls",
@@ -241,7 +241,7 @@
         "windows-x86_64": "94bcc7adb",
         "macos-aarch64": "94bcc7adb"
       },
-      "manifest_digest": "c0f0ec1aa7175546"
+      "manifest_digest": "b009aa00aef47900"
     },
     {
       "id": "flux-priority",
@@ -261,7 +261,7 @@
         "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "e9b84a88e"
       },
-      "manifest_digest": "e0d04cbc2893f943"
+      "manifest_digest": "332b1a20a0e9a769"
     },
     {
       "id": "flux-proc",
@@ -289,7 +289,7 @@
         "windows-x86_64": "afb8f4d4f",
         "macos-aarch64": "afb8f4d4f"
       },
-      "manifest_digest": "9184e29a16f437aa"
+      "manifest_digest": "696c89d3d66a1320"
     },
     {
       "id": "flux-read",
@@ -309,7 +309,7 @@
         "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "e9b84a88e"
       },
-      "manifest_digest": "18e3955565f57f25"
+      "manifest_digest": "9cca1a5257f87a23"
     },
     {
       "id": "flux-render",
@@ -339,7 +339,7 @@
         "windows-x86_64": "ba6b96aa5",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "e636b6636ff56b12"
+      "manifest_digest": "73ebe869fa0e15f0"
     },
     {
       "id": "flux-wc",
@@ -368,7 +368,7 @@
         "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "e9b84a88e"
       },
-      "manifest_digest": "ea09313f1fc3074f"
+      "manifest_digest": "24f2ae9d5202327d"
     },
     {
       "id": "flux-write",
@@ -416,7 +416,7 @@
         "windows-x86_64": "153440338",
         "macos-aarch64": "153440338"
       },
-      "manifest_digest": "dae017254b1d0666"
+      "manifest_digest": "affd4902685e16a0"
     },
     {
       "id": "rheon",

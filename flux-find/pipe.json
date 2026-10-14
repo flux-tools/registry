@@ -6,6 +6,7 @@
   "version": "1.1.0",
   "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
   "runtime": "binary",
+  "side_effects": [],
   "verbs": [
     {
       "verb": "ffd",
