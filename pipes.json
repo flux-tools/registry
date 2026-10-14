@@ -51,7 +51,7 @@
       "build_ids": {
         "linux-x86_64": "fd4e8d74d",
         "windows-x86_64": "fd4e8d74d",
-        "macos-aarch64": "247ac41e8"
+        "macos-aarch64": "fd4e8d74d"
       },
       "manifest_digest": "b077b22f2e171978"
     },
@@ -434,13 +434,15 @@
       ],
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "fd4e8d74d",
-        "windows-x86_64": "fd4e8d74d"
+        "windows-x86_64": "fd4e8d74d",
+        "macos-aarch64": "fd4e8d74d"
       },
-      "manifest_digest": "8b07b1370c59cc16"
+      "manifest_digest": "89d0464d95cec847"
     }
   ]
 }
