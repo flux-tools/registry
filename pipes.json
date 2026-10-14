@@ -51,7 +51,7 @@
       "build_ids": {
         "linux-x86_64": "bf0939ff1",
         "windows-x86_64": "bf0939ff1",
-        "macos-aarch64": "ee45a76e4"
+        "macos-aarch64": "bf0939ff1"
       },
       "manifest_digest": "4961040852092763"
     },
