@@ -1,0 +1,77 @@
+{
+  "$schema": "https://oh-my-hsh.navii.online/schemas/pipe-v1.json",
+  "id": "rheon-find",
+  "name": "rheon-find",
+  "bin_name": "rheon-find",
+  "version": "1.1.0",
+  "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
+  "runtime": "binary",
+  "side_effects": [],
+  "replaces": [
+    "flux-find"
+  ],
+  "verbs": [
+    {
+      "verb": "rhfd",
+      "template": "rheon-find {query} {path}",
+      "args": [
+        {
+          "name": "query",
+          "type": "str"
+        },
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "rhfd",
+      "template": "rheon-find {query}",
+      "args": [
+        {
+          "name": "query",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "ffd",
+      "template": "rheon-find {query} {path}",
+      "args": [
+        {
+          "name": "query",
+          "type": "str"
+        },
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "ffd",
+      "template": "rheon-find {query}",
+      "args": [
+        {
+          "name": "query",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "flux-find",
+      "template": "rheon-find",
+      "args": []
+    }
+  ],
+  "category": [
+    "source",
+    "filter"
+  ],
+  "usage": "rheon-find \"query\" /path --limit 50",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64"
+  ]
+}

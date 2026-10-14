@@ -1,0 +1,85 @@
+{
+  "$schema": "https://oh-my-hsh.navii.online/schemas/pipe-v1.json",
+  "id": "rheon-grep",
+  "name": "rheon-grep",
+  "bin_name": "rheon-grep",
+  "version": "3.1.1",
+  "description": "Parallel regex search over files or rheon-eye records, as Flux NDJSON.",
+  "usage": "rheon-grep TODO ~/project",
+  "author": "takakix2",
+  "license": "MIT",
+  "runtime": "binary",
+  "side_effects": [],
+  "replaces": [
+    "flux-grep"
+  ],
+  "tags": [
+    "search",
+    "filter",
+    "official"
+  ],
+  "min_hsh_version": "0.1.0",
+  "verbs": [
+    {
+      "verb": "rhgr",
+      "template": "rheon-grep {pattern} {path}",
+      "args": [
+        {
+          "name": "pattern",
+          "type": "str"
+        },
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "rhgr",
+      "template": "rheon-grep {pattern}",
+      "args": [
+        {
+          "name": "pattern",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "fgr",
+      "template": "rheon-grep {pattern} {path}",
+      "args": [
+        {
+          "name": "pattern",
+          "type": "str"
+        },
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "fgr",
+      "template": "rheon-grep {pattern}",
+      "args": [
+        {
+          "name": "pattern",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "flux-grep",
+      "template": "rheon-grep",
+      "args": []
+    }
+  ],
+  "category": [
+    "source",
+    "filter"
+  ],
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64"
+  ]
+}

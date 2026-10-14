@@ -5,7 +5,7 @@
   "bin_name": "filter-json",
   "version": "0.3.2",
   "description": "Keeps Flux records by type or field and projects the fields you want.",
-  "usage": "flux-eye . --detail | filter-json --field path --keyword src",
+  "usage": "rheon-eye . --detail | filter-json --field path --keyword src",
   "author": "takakix2",
   "license": "MIT",
   "runtime": "binary",
@@ -17,12 +17,36 @@
   "min_hsh_version": "0.1.0",
   "category": "filter",
   "side_effects": [],
-  "platforms": [
-    "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
-  ],
   "verbs": [
+    {
+      "verb": "rhjson",
+      "template": "filter-json",
+      "args": []
+    },
+    {
+      "verb": "rhjson",
+      "template": "filter-json --type {types}",
+      "args": [
+        {
+          "name": "types",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "rhjson",
+      "template": "filter-json --field {field} --keyword {kw}",
+      "args": [
+        {
+          "name": "field",
+          "type": "str"
+        },
+        {
+          "name": "kw",
+          "type": "str"
+        }
+      ]
+    },
     {
       "verb": "fjson",
       "template": "filter-json",
@@ -53,5 +77,10 @@
       ]
     }
   ],
-  "notes": "Selects Flux records by type (`--type` / `--not-type`, exact match) or by naming a field to look in, and projects the fields you want (the required envelope always stays). Not a grep stand-in: whole-record search was removed in 2026-09 because it duplicated `grep -i` and rewrote the bytes.\n\n⚠️ 2026-09-02 に口を作り直した。📏 旧 `--keyword`（全欄）は `grep -i` と同じ答えを返し （sig の path＝実体は cwd に当たって 40/40）、素通しでも json.dumps で書き直して sha256 が変わっていた。⭐ 残したのは grep に書けない側（欄を指す）だけ。🚨 動詞 `fjson <kw>` は `fjson <field> <kw>` になった（旧形は rc=2 で断る）。 🚚 2026-09-02 に Rust へ昇格（#9）。⭐ Python 版は scripts/filter_json.py に残す —— 移植の差分検体が正本として引く。🚨 射影した行の綴りだけ変わった（json.dumps の空白あり → 一族と同じ compact）。素通しは原文のままなので封緘の連続性は壊れない。 🆕 2026-10-12 に --type / --not-type（完全一致・カンマ区切り）を足した —— 「全部出して、欲しい所以外は型で落とす」（flux-proc | filter-json --type disk）。終端は型で絞らない。⚠️ Python 版（scripts/filter_json.py）には無い（移植の差分検体は旧来の口だけを突き合わせる）。"
+  "notes": "Selects Flux records by type (`--type` / `--not-type`, exact match) or by naming a field to look in, and projects the fields you want (the required envelope always stays). Not a grep stand-in: whole-record search was removed in 2026-09 because it duplicated `grep -i` and rewrote the bytes.\n\n⚠️ 2026-09-02 に口を作り直した。📏 旧 `--keyword`（全欄）は `grep -i` と同じ答えを返し （sig の path＝実体は cwd に当たって 40/40）、素通しでも json.dumps で書き直して sha256 が変わっていた。⭐ 残したのは grep に書けない側（欄を指す）だけ。🚨 動詞 `fjson <kw>` は `fjson <field> <kw>` になった（旧形は rc=2 で断る）。 🚚 2026-09-02 に Rust へ昇格（#9）。⭐ Python 版は scripts/filter_json.py に残す —— 移植の差分検体が正本として引く。🚨 射影した行の綴りだけ変わった（json.dumps の空白あり → 一族と同じ compact）。素通しは原文のままなので封緘の連続性は壊れない。 🆕 2026-10-12 に --type / --not-type（完全一致・カンマ区切り）を足した —— 「全部出して、欲しい所以外は型で落とす」（rheon-proc | filter-json --type disk）。終端は型で絞らない。⚠️ Python 版（scripts/filter_json.py）には無い（移植の差分検体は旧来の口だけを突き合わせる）。",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64",
+    "macos-aarch64"
+  ]
 }

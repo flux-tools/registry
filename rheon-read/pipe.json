@@ -1,0 +1,106 @@
+{
+  "$schema": "https://oh-my-hsh.navii.online/schemas/pipe-v1.json",
+  "id": "rheon-read",
+  "name": "rheon-read",
+  "bin_name": "rheon-read",
+  "version": "3.4.1",
+  "description": "Token-budgeted reader for a path or the files upstream records name.",
+  "notes": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
+  "runtime": "binary",
+  "side_effects": [],
+  "replaces": [
+    "flux-read"
+  ],
+  "verbs": [
+    {
+      "verb": "rhread",
+      "template": "rheon-read {path}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "rhread",
+      "template": "rheon-read {path} --budget {budget}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        },
+        {
+          "name": "budget",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "verb": "rhread",
+      "template": "rheon-read {path} --budget {budget}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        },
+        {
+          "name": "budget",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "fread",
+      "template": "rheon-read {path}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "fread",
+      "template": "rheon-read {path} --budget {budget}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        },
+        {
+          "name": "budget",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "verb": "fread",
+      "template": "rheon-read {path} --budget {budget}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        },
+        {
+          "name": "budget",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "verb": "flux-read",
+      "template": "rheon-read",
+      "args": []
+    }
+  ],
+  "category": [
+    "source",
+    "filter"
+  ],
+  "usage": "rheon-read /path/to/file --budget 2000   |   rheon-eye . --detail | rheon-read",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64"
+  ]
+}

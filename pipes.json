@@ -9,7 +9,7 @@
       "author": "takakix2",
       "bin_name": "filter-json",
       "runtime": "binary",
-      "usage": "flux-eye . --detail | filter-json --field path --keyword src",
+      "usage": "rheon-eye . --detail | filter-json --field path --keyword src",
       "license": "MIT",
       "tags": [
         "filter",
@@ -23,16 +23,16 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "ba6b96aa5",
-        "windows-x86_64": "ba6b96aa5",
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "78912be4abde5d7c"
+      "manifest_digest": "d10e174c8ede14e0"
     },
     {
       "id": "flux",
       "name": "flux",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "description": "Renamed to rheon: run `flux install rheon`.",
       "author": "takakix2",
       "bin_name": "flux",
@@ -49,11 +49,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "1c82e7db7",
-        "windows-x86_64": "1c82e7db7",
+        "linux-x86_64": "e57185636",
+        "windows-x86_64": "e57185636",
         "macos-aarch64": "1c82e7db7"
       },
-      "manifest_digest": "90d47392a3b6dda0"
+      "manifest_digest": "f7142c8b74913c3f"
     },
     {
       "id": "flux-count",
@@ -518,7 +518,7 @@
       "author": "takakix2",
       "bin_name": "json-to-table",
       "runtime": "binary",
-      "usage": "flux-eye . | json-to-table",
+      "usage": "rheon-eye . | json-to-table",
       "license": "MIT",
       "tags": [
         "display",
@@ -532,16 +532,16 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "153440338",
-        "windows-x86_64": "153440338",
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "153440338"
       },
-      "manifest_digest": "affd4902685e16a0"
+      "manifest_digest": "7eccd93345584ad0"
     },
     {
       "id": "rheon",
       "name": "rheon",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "description": "Package manager for the flux family.",
       "author": "takakix2",
       "bin_name": "rheon",
@@ -558,11 +558,487 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "1c82e7db7",
-        "windows-x86_64": "1c82e7db7",
+        "linux-x86_64": "e57185636",
+        "windows-x86_64": "e57185636",
         "macos-aarch64": "1c82e7db7"
       },
-      "manifest_digest": "384403ad3a9a7ef9"
+      "manifest_digest": "fdc8afcd53d1fbf0"
+    },
+    {
+      "id": "rheon-count",
+      "name": "rheon-count",
+      "version": "1.0.0",
+      "description": "Counts Flux records per value of one field -- uniq -c for records.",
+      "bin_name": "rheon-count",
+      "runtime": "binary",
+      "usage": "rheon-grep TODO src --limit 0 | rheon-count --by path",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-count"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "8005ee525c6b9f38"
+    },
+    {
+      "id": "rheon-du",
+      "name": "rheon-du",
+      "version": "0.1.1",
+      "description": "Where the space under the current directory goes, one record per directory.",
+      "author": "takakix2",
+      "bin_name": "rheon-du",
+      "runtime": "binary",
+      "usage": "rheon-du --max-depth 1",
+      "license": "MIT",
+      "tags": [
+        "filesystem",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-du"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "031cf5cbb01223d7"
+    },
+    {
+      "id": "rheon-env",
+      "name": "rheon-env",
+      "version": "0.1.1",
+      "description": "The environment this process got, one record per variable, secrets hidden.",
+      "author": "takakix2",
+      "bin_name": "rheon-env",
+      "runtime": "binary",
+      "usage": "rheon-env PATH",
+      "license": "MIT",
+      "tags": [
+        "system",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-env"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "8c2ae8bcec640f50"
+    },
+    {
+      "id": "rheon-eye",
+      "name": "rheon-eye",
+      "version": "0.2.1",
+      "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
+      "author": "takakix2",
+      "bin_name": "rheon-eye",
+      "runtime": "binary",
+      "usage": "rheon-eye ~/project --detail",
+      "license": "MIT",
+      "tags": [
+        "filesystem",
+        "scanner",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-eye"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "e50a8c190229f028"
+    },
+    {
+      "id": "rheon-find",
+      "name": "rheon-find",
+      "version": "1.1.0",
+      "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
+      "bin_name": "rheon-find",
+      "runtime": "binary",
+      "usage": "rheon-find \"query\" /path --limit 50",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-find"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "80bacc35f8a22cb9"
+    },
+    {
+      "id": "rheon-grep",
+      "name": "rheon-grep",
+      "version": "3.1.1",
+      "description": "Parallel regex search over files or rheon-eye records, as Flux NDJSON.",
+      "author": "takakix2",
+      "bin_name": "rheon-grep",
+      "runtime": "binary",
+      "usage": "rheon-grep TODO ~/project",
+      "license": "MIT",
+      "tags": [
+        "search",
+        "filter",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-grep"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "389d466de2504327"
+    },
+    {
+      "id": "rheon-head",
+      "name": "rheon-head",
+      "version": "1.0.0",
+      "description": "The first N Flux records -- head for records, keeping the terminator rule.",
+      "bin_name": "rheon-head",
+      "runtime": "binary",
+      "usage": "rheon-du | rheon-sort --by disk --desc | rheon-head -n 5",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-head"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "4e34acc1e7465670"
+    },
+    {
+      "id": "rheon-id",
+      "name": "rheon-id",
+      "version": "0.1.0",
+      "description": "Who this process runs as: one identity record, then one per group.",
+      "author": "takakix2",
+      "bin_name": "rheon-id",
+      "runtime": "binary",
+      "usage": "rheon-id | filter-json --type group",
+      "license": "MIT",
+      "tags": [
+        "system",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-id"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "0177cabc47b59f11"
+    },
+    {
+      "id": "rheon-ls",
+      "name": "rheon-ls",
+      "version": "0.1.0",
+      "description": "What is in the current directory, one record per entry, nothing hidden.",
+      "author": "takakix2",
+      "bin_name": "rheon-ls",
+      "runtime": "binary",
+      "usage": "rheon-ls | filter-json --type entry",
+      "license": "MIT",
+      "tags": [
+        "filesystem",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-ls"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "c2f09d4e4eb721c0"
+    },
+    {
+      "id": "rheon-priority",
+      "name": "rheon-priority",
+      "version": "0.3.4",
+      "description": "Ranks file records by how recently and how often they were touched.",
+      "bin_name": "rheon-priority",
+      "runtime": "binary",
+      "usage": "rheon-eye . --detail | rheon-priority --since 24h",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-priority"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "81a5b00bb6655147"
+    },
+    {
+      "id": "rheon-proc",
+      "name": "rheon-proc",
+      "version": "0.1.0",
+      "description": "What the system is doing now: host, load, memory, disks and processes.",
+      "author": "takakix2",
+      "bin_name": "rheon-proc",
+      "runtime": "binary",
+      "usage": "rheon-proc process disk",
+      "license": "MIT",
+      "tags": [
+        "system",
+        "source",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64",
+        "macos-aarch64"
+      ],
+      "replaces": [
+        "flux-proc"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a",
+        "macos-aarch64": "1bfbeb78a"
+      },
+      "manifest_digest": "e8d7f4fef986fe75"
+    },
+    {
+      "id": "rheon-read",
+      "name": "rheon-read",
+      "version": "3.4.1",
+      "description": "Token-budgeted reader for a path or the files upstream records name.",
+      "bin_name": "rheon-read",
+      "runtime": "binary",
+      "usage": "rheon-read /path/to/file --budget 2000   |   rheon-eye . --detail | rheon-read",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-read"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "685a5bc2d3ba4de8"
+    },
+    {
+      "id": "rheon-render",
+      "name": "rheon-render",
+      "version": "0.4.1",
+      "description": "Converts Flux NDJSON to and from JSON, Markdown, CSV and YAML.",
+      "author": "takakix2",
+      "bin_name": "rheon-render",
+      "runtime": "binary",
+      "usage": "rheon-eye /vault | rheon-render --to md",
+      "license": "MIT",
+      "tags": [
+        "converter",
+        "format",
+        "markdown",
+        "csv",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-render"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "ecd11e80a28a0486"
+    },
+    {
+      "id": "rheon-sort",
+      "name": "rheon-sort",
+      "version": "1.0.0",
+      "description": "Sorts Flux records by the value of one field -- sort -n for records.",
+      "bin_name": "rheon-sort",
+      "runtime": "binary",
+      "usage": "rheon-du | rheon-sort --by disk --desc",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-sort"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "425f5deebb9adc73"
+    },
+    {
+      "id": "rheon-sum",
+      "name": "rheon-sum",
+      "version": "1.0.0",
+      "description": "File digests as Flux records -- sha256sum / md5sum for records.",
+      "bin_name": "rheon-sum",
+      "runtime": "binary",
+      "usage": "git ls-files | sig | rheon-sum",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-sum"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "c956179cd89815ea"
+    },
+    {
+      "id": "rheon-tail",
+      "name": "rheon-tail",
+      "version": "1.0.0",
+      "description": "The last N Flux records -- tail for records, terminator not counted.",
+      "bin_name": "rheon-tail",
+      "runtime": "binary",
+      "usage": "journal --since 1h | rheon-tail -n 20",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-tail"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "dba7fbbd7469f160"
+    },
+    {
+      "id": "rheon-time",
+      "name": "rheon-time",
+      "version": "1.0.0",
+      "description": "The current time as one Flux record -- date for records, zone included.",
+      "bin_name": "rheon-time",
+      "runtime": "binary",
+      "usage": "rheon-time",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-time"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "646a1e27a627f077"
+    },
+    {
+      "id": "rheon-wc",
+      "name": "rheon-wc",
+      "version": "0.2.2",
+      "description": "Lines, words, bytes and characters per file -- wc for records.",
+      "author": "takakix2",
+      "bin_name": "rheon-wc",
+      "runtime": "binary",
+      "usage": "rheon-ls | rheon-wc -l",
+      "license": "MIT",
+      "tags": [
+        "text",
+        "source",
+        "filter",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-wc"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "18259d3ea47a018f"
+    },
+    {
+      "id": "rheon-write",
+      "name": "rheon-write",
+      "version": "1.1.1",
+      "description": "Writes files: overwrite, append, replace lines, move or mkdir.",
+      "bin_name": "rheon-write",
+      "runtime": "binary",
+      "usage": "rheon-write /path/to/file --mode overwrite",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "replaces": [
+        "flux-write"
+      ],
+      "build_ids": {
+        "linux-x86_64": "1bfbeb78a",
+        "windows-x86_64": "1bfbeb78a"
+      },
+      "manifest_digest": "7d438d3f699d809a"
     }
   ]
 }
