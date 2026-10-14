@@ -475,6 +475,34 @@
       "manifest_digest": "4288da66e31f7a0f"
     },
     {
+      "id": "rheon-replace",
+      "name": "rheon-replace",
+      "version": "0.1.0",
+      "description": "Replaces text only if it occurs exactly as often as expected -- no silent sed.",
+      "author": "takakix2",
+      "bin_name": "rheon-replace",
+      "runtime": "binary",
+      "usage": "rheon-grep old_name . | rheon-replace --old old_name --new new_name --expect 3 --apply",
+      "license": "MIT",
+      "tags": [
+        "text",
+        "edit",
+        "source",
+        "filter",
+        "official"
+      ],
+      "min_hsh_version": "0.1.0",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "f2617f513",
+        "windows-x86_64": "f2617f513"
+      },
+      "manifest_digest": "883c5e30ec968579"
+    },
+    {
       "id": "rheon-sort",
       "name": "rheon-sort",
       "version": "1.0.0",
