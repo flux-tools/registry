@@ -3,7 +3,7 @@
   "id": "flux",
   "name": "flux",
   "bin_name": "flux",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Package manager for the flux family.",
   "usage": "flux install flux-eye",
   "author": "takakix2",

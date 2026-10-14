@@ -3,7 +3,7 @@
   "id": "flux-read",
   "name": "flux-read",
   "bin_name": "flux-read",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "Token-budgeted reader for a path or the files upstream records name.",
   "notes": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
   "runtime": "binary",

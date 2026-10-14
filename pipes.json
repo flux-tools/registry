@@ -32,7 +32,7 @@
     {
       "id": "flux",
       "name": "flux",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "description": "Package manager for the flux family.",
       "author": "takakix2",
       "bin_name": "flux",
@@ -49,11 +49,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "bf0939ff1",
-        "windows-x86_64": "bf0939ff1",
+        "linux-x86_64": "247ac41e8",
+        "windows-x86_64": "247ac41e8",
         "macos-aarch64": "bf0939ff1"
       },
-      "manifest_digest": "4961040852092763"
+      "manifest_digest": "c31e3e46b77d4016"
     },
     {
       "id": "flux-du",
@@ -109,7 +109,7 @@
         "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "f5bb04713f631fb9"
+      "manifest_digest": "a6cb343e2b296f4e"
     },
     {
       "id": "flux-eye",
@@ -294,7 +294,7 @@
     {
       "id": "flux-read",
       "name": "flux-read",
-      "version": "3.3.0",
+      "version": "3.4.0",
       "description": "Token-budgeted reader for a path or the files upstream records name.",
       "bin_name": "flux-read",
       "runtime": "binary",
@@ -305,11 +305,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "16479295a",
-        "windows-x86_64": "16479295a",
+        "linux-x86_64": "247ac41e8",
+        "windows-x86_64": "247ac41e8",
         "macos-aarch64": "16479295a"
       },
-      "manifest_digest": "32ffc915897b59e7"
+      "manifest_digest": "27894ff6fc34f106"
     },
     {
       "id": "flux-render",
