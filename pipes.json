@@ -56,6 +56,24 @@
       "manifest_digest": "5ea9a15721d9168a"
     },
     {
+      "id": "flux-count",
+      "name": "flux-count",
+      "version": "1.0.0",
+      "description": "Counts Flux records per value of one field -- uniq -c for records.",
+      "bin_name": "flux-count",
+      "runtime": "binary",
+      "usage": "flux-grep TODO src --limit 0 | flux-count --by path",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "fb866feae",
+        "windows-x86_64": "fb866feae"
+      },
+      "manifest_digest": "27ca964a4f2af9d1"
+    },
+    {
       "id": "flux-du",
       "name": "flux-du",
       "version": "0.1.1",
@@ -360,6 +378,24 @@
         "macos-aarch64": "ee45a76e4"
       },
       "manifest_digest": "73ebe869fa0e15f0"
+    },
+    {
+      "id": "flux-sort",
+      "name": "flux-sort",
+      "version": "1.0.0",
+      "description": "Sorts Flux records by the value of one field -- sort -n for records.",
+      "bin_name": "flux-sort",
+      "runtime": "binary",
+      "usage": "flux-du | flux-sort --by disk --desc",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "fb866feae",
+        "windows-x86_64": "fb866feae"
+      },
+      "manifest_digest": "068a54fa54fd023d"
     },
     {
       "id": "flux-tail",
