@@ -52,6 +52,7 @@
   "notes": "The first N Flux records -- head for records. Unlike plain head it keeps the terminator rule: when it cut the stream it ends with head-stats:truncated (not complete, since it never saw upstream finish) and says so on stderr; when it did not cut, it passes completion on. Reads at most two records past N, then stops.\n\nPrototype for #62 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. Short names fhead / ftail (decided 2026-10-14, matching fsort / fcount): the npm packages of the same names only collide for someone who installs them globally -- the #57 shape.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }

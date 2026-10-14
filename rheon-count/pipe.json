@@ -42,6 +42,7 @@
   "notes": "Groups Flux records by the value of one field and counts them -- sort | uniq -c | sort -rn for records. One tally record per value, largest count first; the value is carried under the grouped field's own name; records without the field are counted under null and reported on stderr.\n\nPrototype for #59 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. Emits tally:observed, not count:observed -- rheon-wc already uses count:observed with other fields. Accumulates its input. Pair of rheon-sort (#58).",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }
