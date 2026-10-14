@@ -4,7 +4,7 @@
   "name": "flux-ls",
   "bin_name": "flux-ls",
   "version": "0.1.0",
-  "description": "What is in the current directory, as Flux signals: one record per entry (path, name, kind, size, mtime, hidden, link target, mode, owner, ...), sorted by name. Nothing is hidden or reordered here -- dotfiles come out with hidden: true, and sorting, filtering and tables are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.",
+  "description": "What is in the current directory, one record per entry, nothing hidden.",
   "usage": "flux-ls | filter-json --type entry",
   "author": "takakix2",
   "license": "MIT",
@@ -15,7 +15,12 @@
     "official"
   ],
   "min_hsh_version": "0.1.0",
-  "notes": "Every record has the same keys on every OS; a value the OS does not have is null (mode, uid, inode on Windows). hidden is a leading dot, or the OS's own mark (the hidden attribute on Windows, chflags hidden on macOS). Symlinks are described, not followed (link_target). --names-only skips the stat per entry (path, name and kind only) for large or remote directories. Names that are not UTF-8 are written with U+FFFD and counted on stderr. The library entry (run_in) takes the directory and writers explicitly and never exits the process, so a shell can run it in-process. The short name is fla (flux list all): fls was taken by The Sleuth Kit and by other ls replacements.",
+  "category": "source",
+  "platforms": [
+    "linux-x86_64",
+    "windows-x86_64",
+    "macos-aarch64"
+  ],
   "verbs": [
     {
       "verb": "fla",
@@ -23,10 +28,5 @@
       "args": []
     }
   ],
-  "category": "source",
-  "platforms": [
-    "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
-  ]
+  "notes": "What is in the current directory, as Flux signals: one record per entry (path, name, kind, size, mtime, hidden, link target, mode, owner, ...), sorted by name. Nothing is hidden or reordered here -- dotfiles come out with hidden: true, and sorting, filtering and tables are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.\n\nEvery record has the same keys on every OS; a value the OS does not have is null (mode, uid, inode on Windows). hidden is a leading dot, or the OS's own mark (the hidden attribute on Windows, chflags hidden on macOS). Symlinks are described, not followed (link_target). --names-only skips the stat per entry (path, name and kind only) for large or remote directories. Names that are not UTF-8 are written with U+FFFD and counted on stderr. The library entry (run_in) takes the directory and writers explicitly and never exits the process, so a shell can run it in-process. The short name is fla (flux list all): fls was taken by The Sleuth Kit and by other ls replacements."
 }

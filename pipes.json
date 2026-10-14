@@ -5,7 +5,7 @@
       "id": "filter-json",
       "name": "filter-json",
       "version": "0.3.2",
-      "description": "Selects Flux records by type (`--type` / `--not-type`, exact match) or by naming a field to look in, and projects the fields you want (the required envelope always stays). Not a grep stand-in: whole-record search was removed in 2026-09 because it duplicated `grep -i` and rewrote the bytes.",
+      "description": "Keeps Flux records by type or field and projects the fields you want.",
       "author": "takakix2",
       "bin_name": "filter-json",
       "runtime": "binary",
@@ -27,13 +27,13 @@
         "windows-x86_64": "ba6b96aa5",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "5d9c8f4dec83e037"
+      "manifest_digest": "67e29359cfbe6b7e"
     },
     {
       "id": "flux",
       "name": "flux",
-      "version": "0.1.2",
-      "description": "Package manager for the flux family. Fetches pipes and the declarations that turn them into dot-verbs.",
+      "version": "0.2.0",
+      "description": "Package manager for the flux family.",
       "author": "takakix2",
       "bin_name": "flux",
       "runtime": "binary",
@@ -49,17 +49,17 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "ba6b96aa5",
-        "windows-x86_64": "ba6b96aa5",
+        "linux-x86_64": "bf0939ff1",
+        "windows-x86_64": "bf0939ff1",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "89235ef4f502cdb6"
+      "manifest_digest": "4961040852092763"
     },
     {
       "id": "flux-du",
       "name": "flux-du",
       "version": "0.1.1",
-      "description": "Where the space under the current directory goes, as Flux signals: one record per directory with the totals under it (size, disk blocks, files, dirs), sorted by path. The tree is walked in parallel. Sorting by size, the top few or one depth are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.",
+      "description": "Where the space under the current directory goes, one record per directory.",
       "author": "takakix2",
       "bin_name": "flux-du",
       "runtime": "binary",
@@ -81,13 +81,13 @@
         "windows-x86_64": "2ab94ec58",
         "macos-aarch64": "2ab94ec58"
       },
-      "manifest_digest": "8eb1fff6cb132545"
+      "manifest_digest": "299077cdf8f79425"
     },
     {
       "id": "flux-env",
       "name": "flux-env",
       "version": "0.1.1",
-      "description": "The environment this process got, as Flux signals: one record per variable (name, value, list, origin, redacted, hidden), by name. List-like variables (PATH, PYTHONPATH, XDG_DATA_DIRS, ...) come split on the OS's separator. Values of variables whose names say they are secrets are hidden unless --reveal. With names, only those (exit 1 when none is set). Linux, macOS and Windows.",
+      "description": "The environment this process got, one record per variable, secrets hidden.",
       "author": "takakix2",
       "bin_name": "flux-env",
       "runtime": "binary",
@@ -109,7 +109,7 @@
         "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "2d4a6a45e0d9d02a"
+      "manifest_digest": "f5bb04713f631fb9"
     },
     {
       "id": "flux-eye",
@@ -142,6 +142,7 @@
     {
       "id": "flux-find",
       "name": "flux-find",
+      "version": "1.1.0",
       "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
       "bin_name": "flux-find",
       "runtime": "binary",
@@ -156,13 +157,13 @@
         "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "99c091428a7beb2f"
+      "manifest_digest": "3c6a7652da42c37b"
     },
     {
       "id": "flux-grep",
       "name": "flux-grep",
       "version": "3.1.0",
-      "description": "Fast signal extraction from NDJSON streams. Filter and search structured data at speed.",
+      "description": "Parallel regex search over files or flux-eye records, as Flux NDJSON.",
       "author": "takakix2",
       "bin_name": "flux-grep",
       "runtime": "binary",
@@ -184,13 +185,13 @@
         "windows-x86_64": "ee45a76e4",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "f646d60019d91142"
+      "manifest_digest": "ddc6cffa2cabe93a"
     },
     {
       "id": "flux-id",
       "name": "flux-id",
       "version": "0.1.0",
-      "description": "Who this process runs as, as Flux signals: one identity record (user, uid/gid or SID, primary group, home, shell, privileged), then one record per group. What id, whoami and groups say on Unix and whoami /user /groups says on Windows, in one shape. Linux, macOS and Windows.",
+      "description": "Who this process runs as: one identity record, then one per group.",
       "author": "takakix2",
       "bin_name": "flux-id",
       "runtime": "binary",
@@ -212,13 +213,13 @@
         "windows-x86_64": "e850db720",
         "macos-aarch64": "e850db720"
       },
-      "manifest_digest": "f83ea0d3f2ca7539"
+      "manifest_digest": "a71029be6ce4933a"
     },
     {
       "id": "flux-ls",
       "name": "flux-ls",
       "version": "0.1.0",
-      "description": "What is in the current directory, as Flux signals: one record per entry (path, name, kind, size, mtime, hidden, link target, mode, owner, ...), sorted by name. Nothing is hidden or reordered here -- dotfiles come out with hidden: true, and sorting, filtering and tables are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.",
+      "description": "What is in the current directory, one record per entry, nothing hidden.",
       "author": "takakix2",
       "bin_name": "flux-ls",
       "runtime": "binary",
@@ -240,12 +241,13 @@
         "windows-x86_64": "94bcc7adb",
         "macos-aarch64": "94bcc7adb"
       },
-      "manifest_digest": "f30900ded6b7de8d"
+      "manifest_digest": "c0f0ec1aa7175546"
     },
     {
       "id": "flux-priority",
       "name": "flux-priority",
-      "description": "Relevance ranker. Orders files by git activity -- each commit that touched a file adds 0.5 ** (age / 7 days), uncommitted and out-of-git files count their modified time once -- and emits them in priority order as Flux NDJSON.",
+      "version": "0.3.3",
+      "description": "Ranks file records by how recently and how often they were touched.",
       "bin_name": "flux-priority",
       "runtime": "binary",
       "usage": "flux-eye . --detail | flux-priority --since 24h",
@@ -259,13 +261,13 @@
         "windows-x86_64": "d6ddf8c04",
         "macos-aarch64": "d6ddf8c04"
       },
-      "manifest_digest": "b431b4498266af1e"
+      "manifest_digest": "a8941a57d2027cfe"
     },
     {
       "id": "flux-proc",
       "name": "flux-proc",
       "version": "0.1.0",
-      "description": "What the system is doing right now, as Flux signals: host, load, memory, CPU, disks, network interfaces and processes, one snapshot per run, each kind as its own `type` (keep what you want with `filter-json --type`). Linux, macOS and Windows.",
+      "description": "What the system is doing now: host, load, memory, disks and processes.",
       "author": "takakix2",
       "bin_name": "flux-proc",
       "runtime": "binary",
@@ -287,12 +289,13 @@
         "windows-x86_64": "afb8f4d4f",
         "macos-aarch64": "afb8f4d4f"
       },
-      "manifest_digest": "c4d025e498c7880a"
+      "manifest_digest": "9184e29a16f437aa"
     },
     {
       "id": "flux-read",
       "name": "flux-read",
-      "description": "Token-budgeted file reader. Reads a path, or the files named by upstream Flux records, and streams their contents as Flux NDJSON.",
+      "version": "3.3.0",
+      "description": "Token-budgeted reader for a path or the files upstream records name.",
       "bin_name": "flux-read",
       "runtime": "binary",
       "usage": "flux-read /path/to/file --budget 2000   |   flux-eye . --detail | flux-read",
@@ -306,13 +309,13 @@
         "windows-x86_64": "16479295a",
         "macos-aarch64": "16479295a"
       },
-      "manifest_digest": "df7b42642cc48e43"
+      "manifest_digest": "32ffc915897b59e7"
     },
     {
       "id": "flux-render",
       "name": "flux-render",
       "version": "0.4.1",
-      "description": "Universal format converter. Renders Flux NDJSON as JSON, Markdown, CSV or YAML (and back) -- the interchange layer with the outside world.",
+      "description": "Converts Flux NDJSON to and from JSON, Markdown, CSV and YAML.",
       "author": "takakix2",
       "bin_name": "flux-render",
       "runtime": "binary",
@@ -336,13 +339,13 @@
         "windows-x86_64": "ba6b96aa5",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "c57d191c92cbd326"
+      "manifest_digest": "e636b6636ff56b12"
     },
     {
       "id": "flux-wc",
       "name": "flux-wc",
       "version": "0.2.1",
-      "description": "Lines, words, bytes and characters, as Flux signals: one record per file (lines, words, bytes, chars, max_line, utf8), in input order. Counts the files named, the files Flux records on stdin point to (flux-ls | flux-wc), or the text on stdin itself. Files are read in parallel. -l / -w / -c / -m / -L (as wc has them) ask for some counts only, and lines or bytes alone are counted without decoding the text -- as fast as GNU wc -l. Linux, macOS and Windows.",
+      "description": "Lines, words, bytes and characters per file -- wc for records.",
       "author": "takakix2",
       "bin_name": "flux-wc",
       "runtime": "binary",
@@ -365,12 +368,13 @@
         "windows-x86_64": "ba6b96aa5",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "012e0ea589064ae4"
+      "manifest_digest": "9899c52fd8a5f4a0"
     },
     {
       "id": "flux-write",
       "name": "flux-write",
-      "description": "File writer for the Flux series. Overwrite, append, replace a line range, move or mkdir from one command.",
+      "version": "1.1.1",
+      "description": "Writes files: overwrite, append, replace lines, move or mkdir.",
       "bin_name": "flux-write",
       "runtime": "binary",
       "usage": "flux-write /path/to/file --mode overwrite",
@@ -384,13 +388,13 @@
         "windows-x86_64": "484039360",
         "macos-aarch64": "484039360"
       },
-      "manifest_digest": "d77532839bfba30e"
+      "manifest_digest": "e23d290c04debce3"
     },
     {
       "id": "json-to-table",
       "name": "json-to-table",
       "version": "0.3.0",
-      "description": "Renders an NDJSON stream as a formatted ASCII table, collecting columns from the keys it sees. Human-readable end of a pipeline.",
+      "description": "Renders an NDJSON stream as an ASCII table -- the human end of a pipe.",
       "author": "takakix2",
       "bin_name": "json-to-table",
       "runtime": "binary",
@@ -412,7 +416,7 @@
         "windows-x86_64": "153440338",
         "macos-aarch64": "153440338"
       },
-      "manifest_digest": "31ff664b3b10e207"
+      "manifest_digest": "dae017254b1d0666"
     }
   ]
 }
