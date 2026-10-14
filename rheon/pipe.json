@@ -4,7 +4,7 @@
   "name": "rheon",
   "bin_name": "rheon",
   "version": "0.4.1",
-  "description": "Package manager for the flux family.",
+  "description": "Package manager for the rheon tools.",
   "usage": "flux install flux-eye",
   "author": "takakix2",
   "license": "MIT",
@@ -22,6 +22,8 @@
     "manager",
     "official"
   ],
-  "verbs": [],
-  "notes": "Package manager for the flux family. Fetches pipes and the declarations that turn them into dot-verbs.\n\n`verbs` is empty ON PURPOSE, not yet-to-be-written. A dot-verb is for a pipe that carries records through a chain; this is the tool that *installs* those pipes, so it has nothing to put on the wire. It also deliberately does not claim `profile: flux-cli/v1` -- that profile is for producers and transforms, and requires stdout to hold records only, whereas this talks to a person. Install it and type `flux ...`."
+  "verbs": [
+    { "verb": "rh", "template": "rheon", "args": [] }
+  ],
+  "notes": "Package manager for the rheon tools. Fetches pipes and the declarations that turn them into dot-verbs.\n\n`verbs` holds only the short name `rh` -- a plain alias (`rh install rheon-eye`), not a dot-verb: a dot-verb is for a pipe that carries records through a chain, and this is the tool that *installs* those pipes, so it has nothing to put on the wire. `rh` was checked free on Ubuntu, Debian, Homebrew and npm (a dormant crates.io HTTP client installs an `rh`; rheon does not overwrite a shelf name it did not put there). It also deliberately does not claim `profile: rheon-cli/v1` -- that profile is for producers and transforms, and requires stdout to hold records only, whereas this talks to a person. Install it and type `rheon ...` or `rh ...`."
 }

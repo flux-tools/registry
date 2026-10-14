@@ -542,7 +542,7 @@
       "id": "rheon",
       "name": "rheon",
       "version": "0.4.1",
-      "description": "Package manager for the flux family.",
+      "description": "Package manager for the rheon tools.",
       "author": "takakix2",
       "bin_name": "rheon",
       "runtime": "binary",
@@ -562,7 +562,7 @@
         "windows-x86_64": "e57185636",
         "macos-aarch64": "e57185636"
       },
-      "manifest_digest": "fdc8afcd53d1fbf0"
+      "manifest_digest": "3a79546204aa95b3"
     },
     {
       "id": "rheon-count",
