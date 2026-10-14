@@ -80,7 +80,7 @@ def build() -> dict:
         meta = json.loads(raw.decode("utf-8"))
         entry = {"id": d.name}
         entry.update({k: meta[k] for k in PASSTHROUGH if k in meta})
-        # ⭐ **唯一、pipe.json ではなく実体から来る欄。** 利用者の `flux outdated` が
+        # ⭐ **唯一、pipe.json ではなく実体から来る欄。** 利用者の `rheon outdated` が
         # 「いま入っている物は配っている物と同じか」に答えるための正本。
         build_ids = build_ids_of(d, meta)
         if build_ids:

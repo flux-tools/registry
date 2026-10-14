@@ -9,27 +9,31 @@ compose with each other and with ordinary Unix commands.
 ## Installation
 
 ```bash
-flux install flux-eye
-flux search json
-flux outdated          # is what I have still what is published?
+rheon install flux-eye
+rheon search json
+rheon outdated          # is what I have still what is published?
 ```
 
-`flux` itself is published here, but a package manager cannot be the thing that installs
+`rheon` itself is published here, but a package manager cannot be the thing that installs
 itself the first time. Fetch it directly for your platform
 (`linux-x86_64`, `macos-aarch64`, `windows-x86_64`):
 
 ```bash
-curl -fsSL -o ~/.local/bin/flux \
-  https://raw.githubusercontent.com/flux-tools/registry/main/flux/linux-x86_64/flux
-chmod +x ~/.local/bin/flux
-flux --version          # check it runs before trusting it
+curl -fsSL -o ~/.local/bin/rheon \
+  https://raw.githubusercontent.com/flux-tools/registry/main/rheon/linux-x86_64/rheon
+chmod +x ~/.local/bin/rheon
+rheon --version         # check it runs before trusting it
 ```
 
-After that, `flux update flux` keeps it current.
+> `rheon` was called `flux` until 2026-10. The name was taken by Flux CD's CLI, which installs to
+> the same `~/.local/bin`. The `flux/` entry stays for a while so old installs can update; run as
+> `flux`, it says it was renamed.
+
+After that, `rheon update rheon` keeps it current.
 
 > ⭐ **These are ordinary commands.** `flux-eye ~/project` works on a bare machine with
 > no shell integration, no manifest, and no package manager — the binary on your `PATH`
-> is the whole product. What `flux` adds is carrying the *declaration* beside it, which
+> is the whole product. What `rheon` adds is carrying the *declaration* beside it, which
 > only matters to programs that build command lines for you.
 >
 > They are already used four ways: from an MCP server that spawns them by name, from a
@@ -90,7 +94,7 @@ yourself before you publish.
 drop the binary on your `PATH` and type its name. Being in this registry buys you two
 things: other people can find it, and the declaration travels with it.
 
-**Working on one locally?** `flux install --from <repo>` installs from a checkout that has
+**Working on one locally?** `rheon install --from <repo>` installs from a checkout that has
 a `.manifests/` directory, so you can try a tool before publishing anything.
 
 ## License

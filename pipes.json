@@ -32,8 +32,8 @@
     {
       "id": "flux",
       "name": "flux",
-      "version": "0.2.1",
-      "description": "Package manager for the flux family.",
+      "version": "0.3.0",
+      "description": "Renamed to rheon: run `flux install rheon`.",
       "author": "takakix2",
       "bin_name": "flux",
       "runtime": "binary",
@@ -49,11 +49,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "247ac41e8",
-        "windows-x86_64": "247ac41e8",
+        "linux-x86_64": "fd4e8d74d",
+        "windows-x86_64": "fd4e8d74d",
         "macos-aarch64": "247ac41e8"
       },
-      "manifest_digest": "c31e3e46b77d4016"
+      "manifest_digest": "b077b22f2e171978"
     },
     {
       "id": "flux-du",
@@ -417,6 +417,30 @@
         "macos-aarch64": "153440338"
       },
       "manifest_digest": "dae017254b1d0666"
+    },
+    {
+      "id": "rheon",
+      "name": "rheon",
+      "version": "0.3.0",
+      "description": "Package manager for the flux family.",
+      "author": "takakix2",
+      "bin_name": "rheon",
+      "runtime": "binary",
+      "usage": "flux install flux-eye",
+      "license": "MIT",
+      "tags": [
+        "manager",
+        "official"
+      ],
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "fd4e8d74d",
+        "windows-x86_64": "fd4e8d74d"
+      },
+      "manifest_digest": "8b07b1370c59cc16"
     }
   ]
 }

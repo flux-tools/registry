@@ -27,7 +27,7 @@ jobs:
         run: ./check-artifacts.py
 
       # 🚨 指紋の計算は **2 言語に分かれている**（配る側 Python / 入れる側 Rust）。
-      # ⚠️ 食い違うと、宣言が同じでも `flux outdated` が全部を「宣言が古い」と言い続け、
+      # ⚠️ 食い違うと、宣言が同じでも `rheon outdated` が全部を「宣言が古い」と言い続け、
       # **入れ直しても直らない**。⭐ 初回にこれで実バグ（FNV 素数の桁）を捕まえた。
       - name: 指紋の計算が両側で一致しているか
         run: ./check-digest-agreement.py

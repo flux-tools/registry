@@ -8,7 +8,7 @@
 ⚠️ 言語が違うので 1 本化できない —— ⭐ **∴ 突き合わせる検体でしか守れない。**
 
 食い違うと何が起きるか: **配っている宣言と手元の宣言が同じでも、指紋が違う**
-→ `flux outdated` が**全部を「宣言が古い」と言い続ける**（そして入れ直しても直らない）。
+→ `rheon outdated` が**全部を「宣言が古い」と言い続ける**（そして入れ直しても直らない）。
 🚨 黙って壊れる形で、しかも**入れ直しが効かない**ので、原因に辿り着くのが難しい。
 
     ./check-digest-agreement.py            食い違えば非ゼロ
@@ -70,17 +70,21 @@ def _runnable_flux() -> str | None:
     実行ビットが立っているのに `exec` が落ちる、が現に起きた形なので、
     「在る」で満足しない。
     """
-    for platform_dir in _PLATFORM_ORDER:
-        cand = ROOT / "flux" / platform_dir / ("flux.exe" if platform_dir.startswith("windows") else "flux")
-        if not (cand.is_file() and os.access(cand, os.X_OK)):
-            continue
-        try:
-            r = subprocess.run([str(cand), "--version"], capture_output=True, timeout=10)
-        except OSError:
-            continue  # 🚨 面が違う（Exec format error）—— ここで握るのが目的
-        if r.returncode == 0:
-            return str(cand)
-    return shutil.which("flux")
+    # 🚚 パッケージマネージャは `rheon` に改名した（flux-tools #48）。`rheon/` を先に、旧名の `flux/` は
+    #    移行の間の保険（同じ実体を置いている）。
+    for name in ("rheon", "flux"):
+        for platform_dir in _PLATFORM_ORDER:
+            exe = f"{name}.exe" if platform_dir.startswith("windows") else name
+            cand = ROOT / name / platform_dir / exe
+            if not (cand.is_file() and os.access(cand, os.X_OK)):
+                continue
+            try:
+                r = subprocess.run([str(cand), "--version"], capture_output=True, timeout=10)
+            except OSError:
+                continue  # 🚨 面が違う（Exec format error）—— ここで握るのが目的
+            if r.returncode == 0:
+                return str(cand)
+    return shutil.which("rheon") or shutil.which("flux")
 
 
 def main() -> int:
