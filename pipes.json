@@ -51,7 +51,7 @@
       "build_ids": {
         "linux-x86_64": "e442ea467",
         "windows-x86_64": "e442ea467",
-        "macos-aarch64": "e57185636"
+        "macos-aarch64": "e442ea467"
       },
       "manifest_digest": "186d233de0f753bb"
     },
@@ -560,7 +560,7 @@
       "build_ids": {
         "linux-x86_64": "e442ea467",
         "windows-x86_64": "e442ea467",
-        "macos-aarch64": "e57185636"
+        "macos-aarch64": "e442ea467"
       },
       "manifest_digest": "4d7b9b3e797db907"
     },
