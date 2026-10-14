@@ -225,7 +225,7 @@
         "windows-x86_64": "8f9f95e11",
         "macos-aarch64": "8f9f95e11"
       },
-      "manifest_digest": "11b7b2744f80b08a"
+      "manifest_digest": "d021246a809e6930"
     },
     {
       "id": "flux-id",
@@ -439,7 +439,7 @@
         "windows-x86_64": "8f9f95e11",
         "macos-aarch64": "8f9f95e11"
       },
-      "manifest_digest": "59e3d8f9e6891928"
+      "manifest_digest": "d428b6c4d25bfe52"
     },
     {
       "id": "flux-wc",
