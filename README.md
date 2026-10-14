@@ -1,9 +1,9 @@
-# 🔧 flux — registry
+# 🔧 rheon — registry
 
-Where the **flux** family is published: the catalog, the declarations, and prebuilt
+Where the **rheon** family is published: the catalog, the declarations, and prebuilt
 binaries for each platform.
 
-Everything here speaks **Flux Protocol v1** — NDJSON records on stdin/stdout, so the tools
+Everything here speaks **Rheon Protocol v1** — NDJSON records on stdin/stdout, so the tools
 compose with each other and with ordinary Unix commands.
 
 ## Installation
@@ -44,20 +44,20 @@ After that, `rheon update rheon` keeps it current.
 
 | Pipe | Description | Runtime |
 |------|-------------|---------|
-| [flux](./flux/) | The package manager itself | Binary |
-| [rheon-eye](./flux-eye/) | High-speed filesystem scanner | Binary |
-| [rheon-find](./flux-find/) | Fuzzy filename search | Binary |
-| [rheon-grep](./flux-grep/) | Fast signal extraction from NDJSON streams | Binary |
-| [rheon-priority](./flux-priority/) | Rank files by relevance | Binary |
-| [rheon-read](./flux-read/) | Token-budgeted file reader | Binary |
-| [rheon-write](./flux-write/) | Write, move, mkdir | Binary |
-| [rheon-render](./flux-render/) | Universal format converter (NDJSON ↔ Markdown/CSV/YAML) | Python 3 |
+| [rheon](./rheon/) | The package manager itself (`rh` for short; `flux/` is its old name) | Binary |
+| [rheon-eye](./rheon-eye/) | High-speed filesystem scanner | Binary |
+| [rheon-find](./rheon-find/) | Fuzzy filename search | Binary |
+| [rheon-grep](./rheon-grep/) | Fast signal extraction from NDJSON streams | Binary |
+| [rheon-priority](./rheon-priority/) | Rank files by relevance | Binary |
+| [rheon-read](./rheon-read/) | Token-budgeted file reader | Binary |
+| [rheon-write](./rheon-write/) | Write, move, mkdir | Binary |
+| [rheon-render](./rheon-render/) | Universal format converter (NDJSON ↔ Markdown/CSV/YAML) | Python 3 |
 | [filter-json](./filter-json/) | Filter NDJSON streams by keyword | Python 3 |
 | [json-to-table](./json-to-table/) | Render NDJSON as ASCII tables | Python 3 |
 
 ## Writing Your Own Pipe
 
-Any executable that reads/writes NDJSON can be a Flux pipe. Here's a minimal example in Python:
+Any executable that reads/writes NDJSON can be a Rheon pipe. Here's a minimal example in Python:
 
 ```python
 #!/usr/bin/env python3

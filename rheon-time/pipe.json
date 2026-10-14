@@ -17,11 +17,6 @@
       "verb": "rheon-time",
       "template": "rheon-time",
       "args": []
-    },
-    {
-      "verb": "flux-time",
-      "template": "rheon-time",
-      "args": []
     }
   ],
   "notes": "The current time as one Flux record -- date for records: utc, local, epoch, the IANA zone name, offset, abbreviation, and where the zone came from (TZ or the OS setting). TZ unset is null and TZ empty is an empty string, kept apart. A zone it cannot name is null, never guessed.\n\nPrototype for #65 (2026-10-13), from the #60 memo; promoted to Rust (2026-10-14) with the Python version kept as the diff-test reference. On Windows the offset and name come from the system zone (GetTimeZoneInformation): TZ shows in tz / tz_source / tz_env but does not move the offset, and the name is a Windows display name, so it goes in abbr and tz stays null. hsh #514 is why tz_source exists. No short name yet. verbs carry the tool's own name only (no short name) -- they are there so rheon-conform knows how to invoke it.",

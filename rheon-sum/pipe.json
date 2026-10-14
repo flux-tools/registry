@@ -30,21 +30,6 @@
       "verb": "rheon-sum",
       "template": "rheon-sum",
       "args": []
-    },
-    {
-      "verb": "flux-sum",
-      "template": "rheon-sum {file}",
-      "args": [
-        {
-          "name": "file",
-          "type": "path"
-        }
-      ]
-    },
-    {
-      "verb": "flux-sum",
-      "template": "rheon-sum",
-      "args": []
     }
   ],
   "notes": "File digests as Flux records -- sha256sum / md5sum for records: one checksum record per file (path, algo, digest, bytes). Takes files as arguments, or the path of each Flux record on stdin (git ls-files | sig | rheon-sum). The name stays in its field as is, where GNU sha256sum rewrites names holding a newline or backslash. --algo sha256 (default) / sha1 / md5 / sha512 / blake2b.\n\nPrototype for #64 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. type is checksum, not digest -- rheon-digest already uses digest for something else. No short name yet. verbs carry the tool's own name only (no short name) -- they are there so rheon-conform knows how to invoke it.",

@@ -27,26 +27,6 @@
           "type": "int"
         }
       ]
-    },
-    {
-      "verb": "ftail",
-      "template": "rheon-tail",
-      "args": []
-    },
-    {
-      "verb": "ftail",
-      "template": "rheon-tail -n {n}",
-      "args": [
-        {
-          "name": "n",
-          "type": "int"
-        }
-      ]
-    },
-    {
-      "verb": "flux-tail",
-      "template": "rheon-tail",
-      "args": []
     }
   ],
   "notes": "The last N Flux records -- tail for records. Unlike plain tail it does not count the terminator as a record; it reads to the end, and ends with tail-stats:complete (count, records) when upstream said it finished.\n\nPrototype for #62 (2026-10-13); promoted to Rust in #78 (2026-10-14), with the Python version kept as the diff-test reference. Short names fhead / ftail (decided 2026-10-14, matching fsort / fcount): the npm packages of the same names only collide for someone who installs them globally -- the #57 shape.",

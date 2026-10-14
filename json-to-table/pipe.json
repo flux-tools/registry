@@ -22,11 +22,6 @@
       "verb": "rhtable",
       "template": "json-to-table",
       "args": []
-    },
-    {
-      "verb": "ftable",
-      "template": "json-to-table",
-      "args": []
     }
   ],
   "notes": "Renders an NDJSON stream as a formatted ASCII table, collecting columns from the keys it sees. Human-readable end of a pipeline.\n\n⚠️ 2026-08-27 まで `transform` を名乗っていたが、実測は 403 行中 非 JSON 403 ＝ NDJSON を出さない `sink`。分類の誤りだった。 🚚 2026-09-02 に Rust へ昇格（#9）。⭐ Python 版は scripts/json_to_table.py に残す —— 移植の差分検体が正本として引く。🚨 表はバイト単位で同一（罫線・桁・畳みの文言まで）。綴りを変えた箇所は 1 つも無い。",

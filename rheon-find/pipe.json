@@ -34,35 +34,6 @@
           "type": "str"
         }
       ]
-    },
-    {
-      "verb": "ffd",
-      "template": "rheon-find {query} {path}",
-      "args": [
-        {
-          "name": "query",
-          "type": "str"
-        },
-        {
-          "name": "path",
-          "type": "path"
-        }
-      ]
-    },
-    {
-      "verb": "ffd",
-      "template": "rheon-find {query}",
-      "args": [
-        {
-          "name": "query",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "verb": "flux-find",
-      "template": "rheon-find",
-      "args": []
     }
   ],
   "category": [

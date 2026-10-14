@@ -27,7 +27,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "d10e174c8ede14e0"
+      "manifest_digest": "7d15fbaa013c6944"
     },
     {
       "id": "flux",
@@ -56,461 +56,6 @@
       "manifest_digest": "8e6e78f56151591c"
     },
     {
-      "id": "flux-count",
-      "name": "flux-count",
-      "version": "1.0.0",
-      "description": "Counts Flux records per value of one field -- uniq -c for records.",
-      "bin_name": "flux-count",
-      "runtime": "binary",
-      "usage": "flux-grep TODO src --limit 0 | flux-count --by path",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "fb866feae",
-        "windows-x86_64": "fb866feae",
-        "macos-aarch64": "fb866feae"
-      },
-      "manifest_digest": "49751cb2ec0b7d18"
-    },
-    {
-      "id": "flux-du",
-      "name": "flux-du",
-      "version": "0.1.1",
-      "description": "Where the space under the current directory goes, one record per directory.",
-      "author": "takakix2",
-      "bin_name": "flux-du",
-      "runtime": "binary",
-      "usage": "flux-du --max-depth 1",
-      "license": "MIT",
-      "tags": [
-        "filesystem",
-        "source",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "2ab94ec58",
-        "windows-x86_64": "2ab94ec58",
-        "macos-aarch64": "2ab94ec58"
-      },
-      "manifest_digest": "ad03f1ec86d5c09b"
-    },
-    {
-      "id": "flux-env",
-      "name": "flux-env",
-      "version": "0.1.1",
-      "description": "The environment this process got, one record per variable, secrets hidden.",
-      "author": "takakix2",
-      "bin_name": "flux-env",
-      "runtime": "binary",
-      "usage": "flux-env PATH",
-      "license": "MIT",
-      "tags": [
-        "system",
-        "source",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "ee45a76e4",
-        "windows-x86_64": "ee45a76e4",
-        "macos-aarch64": "ee45a76e4"
-      },
-      "manifest_digest": "bd6365f76410af48"
-    },
-    {
-      "id": "flux-eye",
-      "name": "flux-eye",
-      "version": "0.2.1",
-      "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
-      "author": "takakix2",
-      "bin_name": "flux-eye",
-      "runtime": "binary",
-      "usage": "flux-eye ~/project --detail",
-      "license": "MIT",
-      "tags": [
-        "filesystem",
-        "scanner",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "484039360",
-        "windows-x86_64": "484039360",
-        "macos-aarch64": "484039360"
-      },
-      "manifest_digest": "cf618f29f2acd239"
-    },
-    {
-      "id": "flux-find",
-      "name": "flux-find",
-      "version": "1.1.0",
-      "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
-      "bin_name": "flux-find",
-      "runtime": "binary",
-      "usage": "flux-find \"query\" /path --limit 50",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "ee45a76e4",
-        "windows-x86_64": "ee45a76e4",
-        "macos-aarch64": "ee45a76e4"
-      },
-      "manifest_digest": "8615eefde2bdcc69"
-    },
-    {
-      "id": "flux-grep",
-      "name": "flux-grep",
-      "version": "3.1.1",
-      "description": "Parallel regex search over files or flux-eye records, as Flux NDJSON.",
-      "author": "takakix2",
-      "bin_name": "flux-grep",
-      "runtime": "binary",
-      "usage": "flux-grep TODO ~/project",
-      "license": "MIT",
-      "tags": [
-        "search",
-        "filter",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "e9b84a88e",
-        "windows-x86_64": "e9b84a88e",
-        "macos-aarch64": "e9b84a88e"
-      },
-      "manifest_digest": "503d5cf94ea075c3"
-    },
-    {
-      "id": "flux-head",
-      "name": "flux-head",
-      "version": "1.0.0",
-      "description": "The first N Flux records -- head for records, keeping the terminator rule.",
-      "bin_name": "flux-head",
-      "runtime": "binary",
-      "usage": "flux-du | flux-sort --by disk --desc | flux-head -n 5",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "8f9f95e11",
-        "windows-x86_64": "8f9f95e11",
-        "macos-aarch64": "8f9f95e11"
-      },
-      "manifest_digest": "d021246a809e6930"
-    },
-    {
-      "id": "flux-id",
-      "name": "flux-id",
-      "version": "0.1.0",
-      "description": "Who this process runs as: one identity record, then one per group.",
-      "author": "takakix2",
-      "bin_name": "flux-id",
-      "runtime": "binary",
-      "usage": "flux-id | filter-json --type group",
-      "license": "MIT",
-      "tags": [
-        "system",
-        "source",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "e850db720",
-        "windows-x86_64": "e850db720",
-        "macos-aarch64": "e850db720"
-      },
-      "manifest_digest": "20ff7e50ed8af490"
-    },
-    {
-      "id": "flux-ls",
-      "name": "flux-ls",
-      "version": "0.1.0",
-      "description": "What is in the current directory, one record per entry, nothing hidden.",
-      "author": "takakix2",
-      "bin_name": "flux-ls",
-      "runtime": "binary",
-      "usage": "flux-ls | filter-json --type entry",
-      "license": "MIT",
-      "tags": [
-        "filesystem",
-        "source",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "94bcc7adb",
-        "windows-x86_64": "94bcc7adb",
-        "macos-aarch64": "94bcc7adb"
-      },
-      "manifest_digest": "b009aa00aef47900"
-    },
-    {
-      "id": "flux-priority",
-      "name": "flux-priority",
-      "version": "0.3.4",
-      "description": "Ranks file records by how recently and how often they were touched.",
-      "bin_name": "flux-priority",
-      "runtime": "binary",
-      "usage": "flux-eye . --detail | flux-priority --since 24h",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "e9b84a88e",
-        "windows-x86_64": "e9b84a88e",
-        "macos-aarch64": "e9b84a88e"
-      },
-      "manifest_digest": "332b1a20a0e9a769"
-    },
-    {
-      "id": "flux-proc",
-      "name": "flux-proc",
-      "version": "0.1.0",
-      "description": "What the system is doing now: host, load, memory, disks and processes.",
-      "author": "takakix2",
-      "bin_name": "flux-proc",
-      "runtime": "binary",
-      "usage": "flux-proc process disk",
-      "license": "MIT",
-      "tags": [
-        "system",
-        "source",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "afb8f4d4f",
-        "windows-x86_64": "afb8f4d4f",
-        "macos-aarch64": "afb8f4d4f"
-      },
-      "manifest_digest": "696c89d3d66a1320"
-    },
-    {
-      "id": "flux-read",
-      "name": "flux-read",
-      "version": "3.4.1",
-      "description": "Token-budgeted reader for a path or the files upstream records name.",
-      "bin_name": "flux-read",
-      "runtime": "binary",
-      "usage": "flux-read /path/to/file --budget 2000   |   flux-eye . --detail | flux-read",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "e9b84a88e",
-        "windows-x86_64": "e9b84a88e",
-        "macos-aarch64": "e9b84a88e"
-      },
-      "manifest_digest": "9cca1a5257f87a23"
-    },
-    {
-      "id": "flux-render",
-      "name": "flux-render",
-      "version": "0.4.1",
-      "description": "Converts Flux NDJSON to and from JSON, Markdown, CSV and YAML.",
-      "author": "takakix2",
-      "bin_name": "flux-render",
-      "runtime": "binary",
-      "usage": "flux-eye /vault | flux-render --to md",
-      "license": "MIT",
-      "tags": [
-        "converter",
-        "format",
-        "markdown",
-        "csv",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "ba6b96aa5",
-        "windows-x86_64": "ba6b96aa5",
-        "macos-aarch64": "ee45a76e4"
-      },
-      "manifest_digest": "73ebe869fa0e15f0"
-    },
-    {
-      "id": "flux-sort",
-      "name": "flux-sort",
-      "version": "1.0.0",
-      "description": "Sorts Flux records by the value of one field -- sort -n for records.",
-      "bin_name": "flux-sort",
-      "runtime": "binary",
-      "usage": "flux-du | flux-sort --by disk --desc",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "fb866feae",
-        "windows-x86_64": "fb866feae",
-        "macos-aarch64": "fb866feae"
-      },
-      "manifest_digest": "bba84b9a8e262a1c"
-    },
-    {
-      "id": "flux-sum",
-      "name": "flux-sum",
-      "version": "1.0.0",
-      "description": "File digests as Flux records -- sha256sum / md5sum for records.",
-      "bin_name": "flux-sum",
-      "runtime": "binary",
-      "usage": "git ls-files | sig | flux-sum",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "8a7ac7014",
-        "windows-x86_64": "8a7ac7014",
-        "macos-aarch64": "8a7ac7014"
-      },
-      "manifest_digest": "b229094193eeafcc"
-    },
-    {
-      "id": "flux-tail",
-      "name": "flux-tail",
-      "version": "1.0.0",
-      "description": "The last N Flux records -- tail for records, terminator not counted.",
-      "bin_name": "flux-tail",
-      "runtime": "binary",
-      "usage": "journal --since 1h | flux-tail -n 20",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "8f9f95e11",
-        "windows-x86_64": "8f9f95e11",
-        "macos-aarch64": "8f9f95e11"
-      },
-      "manifest_digest": "d428b6c4d25bfe52"
-    },
-    {
-      "id": "flux-time",
-      "name": "flux-time",
-      "version": "1.0.0",
-      "description": "The current time as one Flux record -- date for records, zone included.",
-      "bin_name": "flux-time",
-      "runtime": "binary",
-      "usage": "flux-time",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "87578e594",
-        "windows-x86_64": "87578e594",
-        "macos-aarch64": "87578e594"
-      },
-      "manifest_digest": "893622601d908426"
-    },
-    {
-      "id": "flux-wc",
-      "name": "flux-wc",
-      "version": "0.2.2",
-      "description": "Lines, words, bytes and characters per file -- wc for records.",
-      "author": "takakix2",
-      "bin_name": "flux-wc",
-      "runtime": "binary",
-      "usage": "flux-ls | flux-wc -l",
-      "license": "MIT",
-      "tags": [
-        "text",
-        "source",
-        "filter",
-        "official"
-      ],
-      "min_hsh_version": "0.1.0",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "e9b84a88e",
-        "windows-x86_64": "e9b84a88e",
-        "macos-aarch64": "e9b84a88e"
-      },
-      "manifest_digest": "24f2ae9d5202327d"
-    },
-    {
-      "id": "flux-write",
-      "name": "flux-write",
-      "version": "1.1.1",
-      "description": "Writes files: overwrite, append, replace lines, move or mkdir.",
-      "bin_name": "flux-write",
-      "runtime": "binary",
-      "usage": "flux-write /path/to/file --mode overwrite",
-      "platforms": [
-        "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
-      ],
-      "build_ids": {
-        "linux-x86_64": "484039360",
-        "windows-x86_64": "484039360",
-        "macos-aarch64": "484039360"
-      },
-      "manifest_digest": "e23d290c04debce3"
-    },
-    {
       "id": "json-to-table",
       "name": "json-to-table",
       "version": "0.3.0",
@@ -536,7 +81,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "7eccd93345584ad0"
+      "manifest_digest": "8c0e4354c0582581"
     },
     {
       "id": "rheon",
@@ -585,7 +130,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "f9dd338ddc299917"
+      "manifest_digest": "50bb49a1729a0678"
     },
     {
       "id": "rheon-du",
@@ -616,7 +161,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "efb094cd217323ce"
+      "manifest_digest": "c6b3450c731c5a14"
     },
     {
       "id": "rheon-env",
@@ -647,7 +192,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "c47bc315bde96d7f"
+      "manifest_digest": "d72b72560846445e"
     },
     {
       "id": "rheon-eye",
@@ -678,7 +223,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "02f3ab19c10c1de7"
+      "manifest_digest": "f9ca0c13e0478bde"
     },
     {
       "id": "rheon-find",
@@ -701,7 +246,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "7e3c48bdfdb74250"
+      "manifest_digest": "a12b54e282bf2ba5"
     },
     {
       "id": "rheon-grep",
@@ -732,7 +277,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "94ab5756b6f6eafe"
+      "manifest_digest": "7fdffdcbd8a0c127"
     },
     {
       "id": "rheon-head",
@@ -755,7 +300,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "f330c6e812763b5f"
+      "manifest_digest": "2927b20172b5e791"
     },
     {
       "id": "rheon-id",
@@ -786,7 +331,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "c835819449801cd8"
+      "manifest_digest": "2663cf2784353131"
     },
     {
       "id": "rheon-ls",
@@ -817,7 +362,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "a4293309a0ab130f"
+      "manifest_digest": "d06123afdf5203af"
     },
     {
       "id": "rheon-priority",
@@ -840,7 +385,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "95ec32452d10a1de"
+      "manifest_digest": "c0288234e84e8583"
     },
     {
       "id": "rheon-proc",
@@ -871,7 +416,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "e8d7f4fef986fe75"
+      "manifest_digest": "77bcf32d66828c8e"
     },
     {
       "id": "rheon-read",
@@ -894,7 +439,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "4d6f9fe4e13de427"
+      "manifest_digest": "9d39856fb83bde8d"
     },
     {
       "id": "rheon-render",
@@ -927,7 +472,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "9f61e42560f15665"
+      "manifest_digest": "4288da66e31f7a0f"
     },
     {
       "id": "rheon-sort",
@@ -950,7 +495,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "52d5ddc71b63bed2"
+      "manifest_digest": "890f261169137e69"
     },
     {
       "id": "rheon-sum",
@@ -973,7 +518,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "801c1fa11f49e281"
+      "manifest_digest": "2c2fe7903614b05d"
     },
     {
       "id": "rheon-tail",
@@ -996,7 +541,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "858e4cbd11d12a6f"
+      "manifest_digest": "e9644900349c1871"
     },
     {
       "id": "rheon-time",
@@ -1019,7 +564,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "849b2901632195ae"
+      "manifest_digest": "0f76f6d94f649759"
     },
     {
       "id": "rheon-wc",
@@ -1051,7 +596,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "d161c25787ec1a76"
+      "manifest_digest": "361839093a7d6063"
     },
     {
       "id": "rheon-write",
@@ -1074,7 +619,7 @@
         "windows-x86_64": "1bfbeb78a",
         "macos-aarch64": "1bfbeb78a"
       },
-      "manifest_digest": "78503eb204ef3bd1"
+      "manifest_digest": "06efad06f8aa0630"
     }
   ]
 }

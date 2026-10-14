@@ -43,35 +43,6 @@
           "type": "str"
         }
       ]
-    },
-    {
-      "verb": "fgr",
-      "template": "rheon-grep {pattern} {path}",
-      "args": [
-        {
-          "name": "pattern",
-          "type": "str"
-        },
-        {
-          "name": "path",
-          "type": "path"
-        }
-      ]
-    },
-    {
-      "verb": "fgr",
-      "template": "rheon-grep {pattern}",
-      "args": [
-        {
-          "name": "pattern",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "verb": "flux-grep",
-      "template": "rheon-grep",
-      "args": []
     }
   ],
   "category": [

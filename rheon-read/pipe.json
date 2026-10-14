@@ -49,49 +49,6 @@
           "type": "str"
         }
       ]
-    },
-    {
-      "verb": "fread",
-      "template": "rheon-read {path}",
-      "args": [
-        {
-          "name": "path",
-          "type": "path"
-        }
-      ]
-    },
-    {
-      "verb": "fread",
-      "template": "rheon-read {path} --budget {budget}",
-      "args": [
-        {
-          "name": "path",
-          "type": "path"
-        },
-        {
-          "name": "budget",
-          "type": "int"
-        }
-      ]
-    },
-    {
-      "verb": "fread",
-      "template": "rheon-read {path} --budget {budget}",
-      "args": [
-        {
-          "name": "path",
-          "type": "path"
-        },
-        {
-          "name": "budget",
-          "type": "str"
-        }
-      ]
-    },
-    {
-      "verb": "flux-read",
-      "template": "rheon-read",
-      "args": []
     }
   ],
   "category": [

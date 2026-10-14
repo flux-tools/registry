@@ -29,21 +29,6 @@
           "type": "path"
         }
       ]
-    },
-    {
-      "verb": "feye",
-      "template": "rheon-eye {path} --detail",
-      "args": [
-        {
-          "name": "path",
-          "type": "path"
-        }
-      ]
-    },
-    {
-      "verb": "flux-eye",
-      "template": "rheon-eye",
-      "args": []
     }
   ],
   "category": "source",
