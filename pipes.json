@@ -500,7 +500,7 @@
       "build_ids": {
         "linux-x86_64": "c58fb2710",
         "windows-x86_64": "c58fb2710",
-        "macos-aarch64": "45c9d8a3f"
+        "macos-aarch64": "c58fb2710"
       },
       "manifest_digest": "4326a4494a890f95"
     },
