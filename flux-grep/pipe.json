@@ -3,7 +3,7 @@
   "id": "flux-grep",
   "name": "flux-grep",
   "bin_name": "flux-grep",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Parallel regex search over files or flux-eye records, as Flux NDJSON.",
   "usage": "flux-grep TODO ~/project",
   "author": "takakix2",

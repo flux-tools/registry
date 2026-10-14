@@ -162,7 +162,7 @@
     {
       "id": "flux-grep",
       "name": "flux-grep",
-      "version": "3.1.0",
+      "version": "3.1.1",
       "description": "Parallel regex search over files or flux-eye records, as Flux NDJSON.",
       "author": "takakix2",
       "bin_name": "flux-grep",
@@ -181,11 +181,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "ee45a76e4",
-        "windows-x86_64": "ee45a76e4",
+        "linux-x86_64": "e9b84a88e",
+        "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "ddc6cffa2cabe93a"
+      "manifest_digest": "69953a631769041d"
     },
     {
       "id": "flux-id",
@@ -246,7 +246,7 @@
     {
       "id": "flux-priority",
       "name": "flux-priority",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "description": "Ranks file records by how recently and how often they were touched.",
       "bin_name": "flux-priority",
       "runtime": "binary",
@@ -257,11 +257,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "d6ddf8c04",
-        "windows-x86_64": "d6ddf8c04",
+        "linux-x86_64": "e9b84a88e",
+        "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "d6ddf8c04"
       },
-      "manifest_digest": "a8941a57d2027cfe"
+      "manifest_digest": "e0d04cbc2893f943"
     },
     {
       "id": "flux-proc",
@@ -294,7 +294,7 @@
     {
       "id": "flux-read",
       "name": "flux-read",
-      "version": "3.4.0",
+      "version": "3.4.1",
       "description": "Token-budgeted reader for a path or the files upstream records name.",
       "bin_name": "flux-read",
       "runtime": "binary",
@@ -305,11 +305,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "247ac41e8",
-        "windows-x86_64": "247ac41e8",
+        "linux-x86_64": "e9b84a88e",
+        "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "247ac41e8"
       },
-      "manifest_digest": "27894ff6fc34f106"
+      "manifest_digest": "18e3955565f57f25"
     },
     {
       "id": "flux-render",
@@ -344,7 +344,7 @@
     {
       "id": "flux-wc",
       "name": "flux-wc",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "description": "Lines, words, bytes and characters per file -- wc for records.",
       "author": "takakix2",
       "bin_name": "flux-wc",
@@ -364,11 +364,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "ba6b96aa5",
-        "windows-x86_64": "ba6b96aa5",
+        "linux-x86_64": "e9b84a88e",
+        "windows-x86_64": "e9b84a88e",
         "macos-aarch64": "ee45a76e4"
       },
-      "manifest_digest": "9899c52fd8a5f4a0"
+      "manifest_digest": "ea09313f1fc3074f"
     },
     {
       "id": "flux-write",

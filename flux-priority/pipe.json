@@ -3,7 +3,7 @@
   "id": "flux-priority",
   "name": "flux-priority",
   "bin_name": "flux-priority",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Ranks file records by how recently and how often they were touched.",
   "runtime": "binary",
   "verbs": [],
