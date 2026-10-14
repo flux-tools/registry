@@ -9,7 +9,7 @@ compose with each other and with ordinary Unix commands.
 ## Installation
 
 ```bash
-rheon install flux-eye
+rheon install rheon-eye
 rheon search json
 rheon outdated          # is what I have still what is published?
 ```
@@ -31,7 +31,7 @@ rheon --version         # check it runs before trusting it
 
 After that, `rheon update rheon` keeps it current.
 
-> ⭐ **These are ordinary commands.** `flux-eye ~/project` works on a bare machine with
+> ⭐ **These are ordinary commands.** `rheon-eye ~/project` works on a bare machine with
 > no shell integration, no manifest, and no package manager — the binary on your `PATH`
 > is the whole product. What `rheon` adds is carrying the *declaration* beside it, which
 > only matters to programs that build command lines for you.
@@ -45,13 +45,13 @@ After that, `rheon update rheon` keeps it current.
 | Pipe | Description | Runtime |
 |------|-------------|---------|
 | [flux](./flux/) | The package manager itself | Binary |
-| [flux-eye](./flux-eye/) | High-speed filesystem scanner | Binary |
-| [flux-find](./flux-find/) | Fuzzy filename search | Binary |
-| [flux-grep](./flux-grep/) | Fast signal extraction from NDJSON streams | Binary |
-| [flux-priority](./flux-priority/) | Rank files by relevance | Binary |
-| [flux-read](./flux-read/) | Token-budgeted file reader | Binary |
-| [flux-write](./flux-write/) | Write, move, mkdir | Binary |
-| [flux-render](./flux-render/) | Universal format converter (NDJSON ↔ Markdown/CSV/YAML) | Python 3 |
+| [rheon-eye](./flux-eye/) | High-speed filesystem scanner | Binary |
+| [rheon-find](./flux-find/) | Fuzzy filename search | Binary |
+| [rheon-grep](./flux-grep/) | Fast signal extraction from NDJSON streams | Binary |
+| [rheon-priority](./flux-priority/) | Rank files by relevance | Binary |
+| [rheon-read](./flux-read/) | Token-budgeted file reader | Binary |
+| [rheon-write](./flux-write/) | Write, move, mkdir | Binary |
+| [rheon-render](./flux-render/) | Universal format converter (NDJSON ↔ Markdown/CSV/YAML) | Python 3 |
 | [filter-json](./filter-json/) | Filter NDJSON streams by keyword | Python 3 |
 | [json-to-table](./json-to-table/) | Render NDJSON as ASCII tables | Python 3 |
 
@@ -68,7 +68,7 @@ for line in sys.stdin:
     print(json.dumps(record), flush=True)
 ```
 
-Save it, `chmod +x`, and pipe it: `flux-eye . | ./my-pipe`
+Save it, `chmod +x`, and pipe it: `rheon-eye . | ./my-pipe`
 
 **To get it listed here**, fork this repository, add `<your-pipe>/` with a `pipe.json`
 manifest, and open a pull request — that directory is the whole change. `pipes.json` is
