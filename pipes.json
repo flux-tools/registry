@@ -451,13 +451,15 @@
       "usage": "flux-time",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "87578e594",
-        "windows-x86_64": "87578e594"
+        "windows-x86_64": "87578e594",
+        "macos-aarch64": "87578e594"
       },
-      "manifest_digest": "e148554bfa80c9df"
+      "manifest_digest": "893622601d908426"
     },
     {
       "id": "flux-wc",
