@@ -442,6 +442,24 @@
       "manifest_digest": "d428b6c4d25bfe52"
     },
     {
+      "id": "flux-time",
+      "name": "flux-time",
+      "version": "1.0.0",
+      "description": "The current time as one Flux record -- date for records, zone included.",
+      "bin_name": "flux-time",
+      "runtime": "binary",
+      "usage": "flux-time",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "87578e594",
+        "windows-x86_64": "87578e594"
+      },
+      "manifest_digest": "e148554bfa80c9df"
+    },
+    {
       "id": "flux-wc",
       "name": "flux-wc",
       "version": "0.2.2",
