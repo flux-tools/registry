@@ -398,6 +398,24 @@
       "manifest_digest": "068a54fa54fd023d"
     },
     {
+      "id": "flux-sum",
+      "name": "flux-sum",
+      "version": "1.0.0",
+      "description": "File digests as Flux records -- sha256sum / md5sum for records.",
+      "bin_name": "flux-sum",
+      "runtime": "binary",
+      "usage": "git ls-files | sig | flux-sum",
+      "platforms": [
+        "linux-x86_64",
+        "windows-x86_64"
+      ],
+      "build_ids": {
+        "linux-x86_64": "8a7ac7014",
+        "windows-x86_64": "8a7ac7014"
+      },
+      "manifest_digest": "e1ed17ce0a0eaf4d"
+    },
+    {
       "id": "flux-tail",
       "name": "flux-tail",
       "version": "1.0.0",
