@@ -32,7 +32,7 @@
     {
       "id": "flux",
       "name": "flux",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "description": "Renamed to rheon: run `flux install rheon`.",
       "author": "takakix2",
       "bin_name": "flux",
@@ -49,11 +49,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "e442ea467",
-        "windows-x86_64": "e442ea467",
+        "linux-x86_64": "418a0a82c",
+        "windows-x86_64": "418a0a82c",
         "macos-aarch64": "e442ea467"
       },
-      "manifest_digest": "186d233de0f753bb"
+      "manifest_digest": "8e6e78f56151591c"
     },
     {
       "id": "flux-count",
@@ -541,7 +541,7 @@
     {
       "id": "rheon",
       "name": "rheon",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "description": "Package manager for the rheon tools.",
       "author": "takakix2",
       "bin_name": "rheon",
@@ -558,11 +558,11 @@
         "macos-aarch64"
       ],
       "build_ids": {
-        "linux-x86_64": "e442ea467",
-        "windows-x86_64": "e442ea467",
+        "linux-x86_64": "418a0a82c",
+        "windows-x86_64": "418a0a82c",
         "macos-aarch64": "e442ea467"
       },
-      "manifest_digest": "4d7b9b3e797db907"
+      "manifest_digest": "fe0b1c5dcfc81a58"
     },
     {
       "id": "rheon-count",

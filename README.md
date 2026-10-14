@@ -20,7 +20,7 @@ itself the first time. Fetch it directly for your platform
 
 ```bash
 curl -fsSL -o ~/.local/bin/rheon \
-  https://raw.githubusercontent.com/flux-tools/registry/main/rheon/linux-x86_64/rheon
+  https://raw.githubusercontent.com/rheon-tools/registry/main/rheon/linux-x86_64/rheon
 chmod +x ~/.local/bin/rheon
 rheon --version         # check it runs before trusting it
 ```
