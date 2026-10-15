@@ -266,16 +266,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
         "linux-x86_64": "b3401302c",
-        "windows-x86_64": "b3401302c"
+        "windows-x86_64": "b3401302c",
+        "macos-aarch64": "b3401302c"
       },
-      "manifest_digest": "580a08f42411f4da"
+      "manifest_digest": "31085c774b50fd91"
     },
     {
       "id": "rheon-head",
@@ -492,13 +494,15 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "build_ids": {
         "linux-x86_64": "b3401302c",
-        "windows-x86_64": "b3401302c"
+        "windows-x86_64": "b3401302c",
+        "macos-aarch64": "b3401302c"
       },
-      "manifest_digest": "45d480b9eb3e7666"
+      "manifest_digest": "9cd846c9094c6305"
     },
     {
       "id": "rheon-sort",
