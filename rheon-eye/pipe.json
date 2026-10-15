@@ -35,6 +35,7 @@
   "notes": "Paths are always absolute, with / on every OS (PROTOCOL_v1 2.06).",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }

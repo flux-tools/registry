@@ -212,16 +212,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-eye"
       ],
       "build_ids": {
         "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e"
+        "windows-x86_64": "a62f2e54e",
+        "macos-aarch64": "a62f2e54e"
       },
-      "manifest_digest": "58b6ac98fa922a9f"
+      "manifest_digest": "a988e285220d7066"
     },
     {
       "id": "rheon-find",
@@ -233,16 +235,18 @@
       "usage": "rheon-find \"query\" /path --limit 50",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-find"
       ],
       "build_ids": {
         "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e"
+        "windows-x86_64": "a62f2e54e",
+        "macos-aarch64": "a62f2e54e"
       },
-      "manifest_digest": "c7241a6e773d0fc1"
+      "manifest_digest": "9ee8b48fb28f65a8"
     },
     {
       "id": "rheon-grep",
@@ -262,16 +266,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
         "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e"
+        "windows-x86_64": "a62f2e54e",
+        "macos-aarch64": "a62f2e54e"
       },
-      "manifest_digest": "3ff82e388c9b7209"
+      "manifest_digest": "542387b97e00fa00"
     },
     {
       "id": "rheon-head",
@@ -345,16 +351,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-ls"
       ],
       "build_ids": {
         "linux-x86_64": "a62f2e54e",
-        "windows-x86_64": "a62f2e54e"
+        "windows-x86_64": "a62f2e54e",
+        "macos-aarch64": "a62f2e54e"
       },
-      "manifest_digest": "600da00105ec736b"
+      "manifest_digest": "e85ef3c8d5e008ba"
     },
     {
       "id": "rheon-priority",

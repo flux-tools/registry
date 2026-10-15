@@ -43,6 +43,7 @@
   "usage": "rheon-find \"query\" /path --limit 50",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }
