@@ -135,7 +135,7 @@
     {
       "id": "rheon-du",
       "name": "rheon-du",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "du, fast: GNU du's flags and lines; Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-du",
@@ -150,18 +150,16 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-du"
       ],
       "build_ids": {
-        "linux-x86_64": "5831a7b32",
-        "windows-x86_64": "5831a7b32",
-        "macos-aarch64": "5831a7b32"
+        "linux-x86_64": "1c9ee322a",
+        "windows-x86_64": "1c9ee322a"
       },
-      "manifest_digest": "9d37d6ad3b163311"
+      "manifest_digest": "e47a72730b2d8515"
     },
     {
       "id": "rheon-env",
