@@ -150,16 +150,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-du"
       ],
       "build_ids": {
         "linux-x86_64": "5831a7b32",
-        "windows-x86_64": "5831a7b32"
+        "windows-x86_64": "5831a7b32",
+        "macos-aarch64": "5831a7b32"
       },
-      "manifest_digest": "fd26e89a7b30015a"
+      "manifest_digest": "9d37d6ad3b163311"
     },
     {
       "id": "rheon-env",
