@@ -266,16 +266,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
         "linux-x86_64": "a564508ae",
-        "windows-x86_64": "a564508ae"
+        "windows-x86_64": "a564508ae",
+        "macos-aarch64": "a564508ae"
       },
-      "manifest_digest": "855c464eb06b0b15"
+      "manifest_digest": "8ee4e633838fcb24"
     },
     {
       "id": "rheon-head",
@@ -403,16 +405,18 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-proc"
       ],
       "build_ids": {
         "linux-x86_64": "8275462d3",
-        "windows-x86_64": "8275462d3"
+        "windows-x86_64": "8275462d3",
+        "macos-aarch64": "8275462d3"
       },
-      "manifest_digest": "9d4699839a6c36bd"
+      "manifest_digest": "1a07510529bbd79c"
     },
     {
       "id": "rheon-read",
@@ -579,16 +583,18 @@
       "usage": "rheon-time",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64"
+        "windows-x86_64",
+        "macos-aarch64"
       ],
       "replaces": [
         "flux-time"
       ],
       "build_ids": {
         "linux-x86_64": "8275462d3",
-        "windows-x86_64": "8275462d3"
+        "windows-x86_64": "8275462d3",
+        "macos-aarch64": "8275462d3"
       },
-      "manifest_digest": "0e2fd0fe69f8e52e"
+      "manifest_digest": "93769a0285793f9d"
     },
     {
       "id": "rheon-wc",
