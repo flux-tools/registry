@@ -251,12 +251,12 @@
     {
       "id": "rheon-grep",
       "name": "rheon-grep",
-      "version": "3.1.1",
-      "description": "Parallel regex search over files or rheon-eye records, as Flux NDJSON.",
+      "version": "4.0.0",
+      "description": "Search like rg (same engine, flags, output); Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-grep",
       "runtime": "binary",
-      "usage": "rheon-grep TODO ~/project",
+      "usage": "rheon-grep PATTERN [PATH...]   (--rheon for records)",
       "license": "MIT",
       "tags": [
         "search",
@@ -266,18 +266,16 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-grep"
       ],
       "build_ids": {
-        "linux-x86_64": "1bfbeb78a",
-        "windows-x86_64": "1bfbeb78a",
-        "macos-aarch64": "1bfbeb78a"
+        "linux-x86_64": "b3401302c",
+        "windows-x86_64": "b3401302c"
       },
-      "manifest_digest": "7fdffdcbd8a0c127"
+      "manifest_digest": "580a08f42411f4da"
     },
     {
       "id": "rheon-head",
@@ -477,12 +475,12 @@
     {
       "id": "rheon-replace",
       "name": "rheon-replace",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "description": "Replaces text only if it occurs exactly as often as expected -- no silent sed.",
       "author": "takakix2",
       "bin_name": "rheon-replace",
       "runtime": "binary",
-      "usage": "rheon-grep old_name . | rheon-replace --old old_name --new new_name --expect 3 --apply",
+      "usage": "rheon-grep --rheon -l old_name . | rheon-replace --old old_name --new new_name --expect 3 --apply",
       "license": "MIT",
       "tags": [
         "text",
@@ -494,15 +492,13 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "build_ids": {
-        "linux-x86_64": "c1a06e33c",
-        "windows-x86_64": "c1a06e33c",
-        "macos-aarch64": "c58fb2710"
+        "linux-x86_64": "b3401302c",
+        "windows-x86_64": "b3401302c"
       },
-      "manifest_digest": "a3bf1d6f11295c42"
+      "manifest_digest": "45d480b9eb3e7666"
     },
     {
       "id": "rheon-sort",

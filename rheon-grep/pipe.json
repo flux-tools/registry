@@ -3,9 +3,9 @@
   "id": "rheon-grep",
   "name": "rheon-grep",
   "bin_name": "rheon-grep",
-  "version": "3.1.1",
-  "description": "Parallel regex search over files or rheon-eye records, as Flux NDJSON.",
-  "usage": "rheon-grep TODO ~/project",
+  "version": "4.0.0",
+  "description": "Search like rg (same engine, flags, output); Rheon records with --rheon.",
+  "usage": "rheon-grep PATTERN [PATH...]   (--rheon for records)",
   "author": "takakix2",
   "license": "MIT",
   "runtime": "binary",
@@ -21,8 +21,8 @@
   "min_hsh_version": "0.1.0",
   "verbs": [
     {
-      "verb": "rhgr",
-      "template": "rheon-grep {pattern} {path}",
+      "verb": "rhg",
+      "template": "rheon-grep --rheon {pattern} {path}",
       "args": [
         {
           "name": "pattern",
@@ -35,8 +35,8 @@
       ]
     },
     {
-      "verb": "rhgr",
-      "template": "rheon-grep {pattern}",
+      "verb": "rhg",
+      "template": "rheon-grep --rheon {pattern}",
       "args": [
         {
           "name": "pattern",
@@ -45,13 +45,8 @@
       ]
     }
   ],
-  "category": [
-    "source",
-    "filter"
-  ],
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }
