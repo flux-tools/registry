@@ -388,7 +388,7 @@
     {
       "id": "rheon-proc",
       "name": "rheon-proc",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "description": "What the system is doing now: host, load, memory, disks and processes.",
       "author": "takakix2",
       "bin_name": "rheon-proc",
@@ -403,18 +403,16 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-proc"
       ],
       "build_ids": {
-        "linux-x86_64": "1bfbeb78a",
-        "windows-x86_64": "1bfbeb78a",
-        "macos-aarch64": "1bfbeb78a"
+        "linux-x86_64": "8275462d3",
+        "windows-x86_64": "8275462d3"
       },
-      "manifest_digest": "77bcf32d66828c8e"
+      "manifest_digest": "9d4699839a6c36bd"
     },
     {
       "id": "rheon-read",
@@ -574,25 +572,23 @@
     {
       "id": "rheon-time",
       "name": "rheon-time",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "The current time as one Flux record -- date for records, zone included.",
       "bin_name": "rheon-time",
       "runtime": "binary",
       "usage": "rheon-time",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-time"
       ],
       "build_ids": {
-        "linux-x86_64": "1bfbeb78a",
-        "windows-x86_64": "1bfbeb78a",
-        "macos-aarch64": "1bfbeb78a"
+        "linux-x86_64": "8275462d3",
+        "windows-x86_64": "8275462d3"
       },
-      "manifest_digest": "0f76f6d94f649759"
+      "manifest_digest": "0e2fd0fe69f8e52e"
     },
     {
       "id": "rheon-wc",
