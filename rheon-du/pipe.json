@@ -43,6 +43,7 @@
   "notes": "By default it is GNU du: the same flags (-a -s -d -h --si -k -m -b -B -c -x -L -H -l -S -t -0 --apparent-size --inodes --exclude -X --time --time-style), the same lines (SIZE<TAB>PATH, a directory after what is in it) and exit codes (1 when something could not be read, or a usage error). One deliberate difference: entries come in name order, so the same tree always gives the same answer. Paths are written with / on Windows too, as hsh's find writes them. The tree is walked in parallel (--threads N; 1 for a spinning disk). On Windows the sizes and file ids come from the directory listings, so no file is opened; the numbers are hsh's du's (the blocks a file takes, rounded up to 512 bytes; directories count). A file with several names counts once (Windows too), at the name that comes first by operand, directory and name; with more than one FILE or with -L every file and directory counts once, as in GNU du.\n\nWith --rheon: one record per directory (and per file with -a) with the totals under it -- size (what the files hold), disk (the blocks they take), files, dirs -- by path, then a terminator. A part that could not be read says partial: true (exit 0); a FILE that could not be looked at gives no terminator and exit 1. Sorting by size or keeping the top few is the next command's job (rheon-sort, rheon-head). The library entry (run_in) never exits the process, so a shell can run it in-process. The short name rhdu is the same program: typed, it is du.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64"
+    "windows-x86_64",
+    "macos-aarch64"
   ]
 }
