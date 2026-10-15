@@ -135,12 +135,12 @@
     {
       "id": "rheon-du",
       "name": "rheon-du",
-      "version": "0.1.1",
-      "description": "Where the space under the current directory goes, one record per directory.",
+      "version": "1.0.0",
+      "description": "du, fast: GNU du's flags and lines; Rheon records with --rheon.",
       "author": "takakix2",
       "bin_name": "rheon-du",
       "runtime": "binary",
-      "usage": "rheon-du --max-depth 1",
+      "usage": "rheon-du [OPTION]... [FILE]...   (--rheon for records)",
       "license": "MIT",
       "tags": [
         "filesystem",
@@ -150,18 +150,16 @@
       "min_hsh_version": "0.1.0",
       "platforms": [
         "linux-x86_64",
-        "windows-x86_64",
-        "macos-aarch64"
+        "windows-x86_64"
       ],
       "replaces": [
         "flux-du"
       ],
       "build_ids": {
-        "linux-x86_64": "1bfbeb78a",
-        "windows-x86_64": "1bfbeb78a",
-        "macos-aarch64": "1bfbeb78a"
+        "linux-x86_64": "5831a7b32",
+        "windows-x86_64": "5831a7b32"
       },
-      "manifest_digest": "c6b3450c731c5a14"
+      "manifest_digest": "fd26e89a7b30015a"
     },
     {
       "id": "rheon-env",

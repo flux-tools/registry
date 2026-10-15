@@ -3,34 +3,46 @@
   "id": "rheon-du",
   "name": "rheon-du",
   "bin_name": "rheon-du",
-  "version": "0.1.1",
-  "description": "Where the space under the current directory goes, one record per directory.",
-  "usage": "rheon-du --max-depth 1",
+  "version": "1.0.0",
+  "description": "du, fast: GNU du's flags and lines; Rheon records with --rheon.",
+  "usage": "rheon-du [OPTION]... [FILE]...   (--rheon for records)",
   "author": "takakix2",
   "license": "MIT",
   "runtime": "binary",
+  "side_effects": [],
+  "rheon": {
+    "flag": "--rheon",
+    "category": "source"
+  },
+  "replaces": [
+    "flux-du"
+  ],
   "tags": [
     "filesystem",
     "source",
     "official"
   ],
   "min_hsh_version": "0.1.0",
-  "category": "source",
-  "side_effects": [],
-  "replaces": [
-    "flux-du"
-  ],
   "verbs": [
     {
-      "verb": "rhusage",
-      "template": "rheon-du",
+      "verb": "rhdu",
+      "template": "rheon-du --rheon {path}",
+      "args": [
+        {
+          "name": "path",
+          "type": "path"
+        }
+      ]
+    },
+    {
+      "verb": "rhdu",
+      "template": "rheon-du --rheon",
       "args": []
     }
   ],
-  "notes": "Where the space under the current directory goes, as Flux signals: one record per directory with the totals under it (size, disk blocks, files, dirs), sorted by path. The tree is walked in parallel. Sorting by size, the top few or one depth are the next command's job. Takes no path: cd there first. Linux, macOS and Windows.\n\nsize is the apparent size (what the files say they hold); disk is the blocks they take, which is what du reports -- sparse and compressed files make them differ. disk is null on Windows. Ignore files and dotfiles hide nothing (target/ and node_modules/ are usually where the space is). Stays on one filesystem unless --cross-filesystems. Hard links count once (not on Windows, where Rust does not give the link count). Symlinks count as themselves and are not followed. A directory that cannot be read is not counted, and it and its parents say partial: true; stderr says how many. --max-depth limits what is shown, not what is counted. --all adds a record per file. --threads N sets the walker threads: more for network mounts, 1 for a spinning disk. The library entry (run_in) never exits the process, so a shell can run it in-process. The short name is fusage: fdu was taken by other du replacements.",
+  "notes": "By default it is GNU du: the same flags (-a -s -d -h --si -k -m -b -B -c -x -L -H -l -S -t -0 --apparent-size --inodes --exclude -X), the same lines (SIZE<TAB>PATH, a directory after what is in it) and exit codes (1 when something could not be read, or a usage error). One deliberate difference: entries come in name order, so the same tree always gives the same answer. The tree is walked in parallel (--threads N; 1 for a spinning disk). On Windows the sizes and file ids come from the directory listings, so no file is opened; the numbers are hsh's du's (the blocks a file takes, rounded up to 512 bytes; directories count). A file with several names counts once (Windows too), at the name that comes first by operand, directory and name; with more than one FILE or with -L every file and directory counts once, as in GNU du.\n\nWith --rheon: one record per directory (and per file with -a) with the totals under it -- size (what the files hold), disk (the blocks they take), files, dirs -- by path, then a terminator. A part that could not be read says partial: true (exit 0); a FILE that could not be looked at gives no terminator and exit 1. Sorting by size or keeping the top few is the next command's job (rheon-sort, rheon-head). The library entry (run_in) never exits the process, so a shell can run it in-process. The short name rhdu is the same program: typed, it is du.",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }
