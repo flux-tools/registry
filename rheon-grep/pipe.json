@@ -10,6 +10,13 @@
   "license": "MIT",
   "runtime": "binary",
   "side_effects": [],
+  "rheon": {
+    "flag": "--rheon",
+    "category": [
+      "source",
+      "filter"
+    ]
+  },
   "replaces": [
     "flux-grep"
   ],

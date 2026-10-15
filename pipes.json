@@ -275,7 +275,7 @@
         "linux-x86_64": "a564508ae",
         "windows-x86_64": "a564508ae"
       },
-      "manifest_digest": "03577f173909ac64"
+      "manifest_digest": "855c464eb06b0b15"
     },
     {
       "id": "rheon-head",
@@ -500,7 +500,7 @@
         "windows-x86_64": "b3401302c",
         "macos-aarch64": "b3401302c"
       },
-      "manifest_digest": "9cd846c9094c6305"
+      "manifest_digest": "67f0e1e488dbfd15"
     },
     {
       "id": "rheon-sort",
