@@ -3,7 +3,7 @@
   "id": "rheon-find",
   "name": "rheon-find",
   "bin_name": "rheon-find",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fuzzy filename finder. Streams matches as Flux NDJSON.",
   "runtime": "binary",
   "side_effects": [],
@@ -43,7 +43,6 @@
   "usage": "rheon-find \"query\" /path --limit 50",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }

@@ -3,7 +3,7 @@
   "id": "rheon-eye",
   "name": "rheon-eye",
   "bin_name": "rheon-eye",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "High-speed filesystem scanner. Streams directory structure as Flux NDJSON.",
   "usage": "rheon-eye ~/project --detail",
   "author": "takakix2",
@@ -32,9 +32,9 @@
     }
   ],
   "category": "source",
+  "notes": "Paths are always absolute, with / on every OS (PROTOCOL_v1 2.06).",
   "platforms": [
     "linux-x86_64",
-    "windows-x86_64",
-    "macos-aarch64"
+    "windows-x86_64"
   ]
 }
